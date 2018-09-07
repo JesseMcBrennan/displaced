@@ -1,5 +1,5 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
-/utils/variables.js
+/variables.js
 # dependencies
 /node_modules
 
