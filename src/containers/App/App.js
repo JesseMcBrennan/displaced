@@ -15,7 +15,6 @@ class App extends Component {
 
   fetchMemberData = async () => {
     const memberData = await apiFetch();
-    const parsedMemberData = memberData.results[0].uri_.map(member => member)
   }
 
 
