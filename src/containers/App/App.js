@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { apiFetch } from '../../utils/fetchCalls.js'
+import { membersFetch, campaignFetch } from '../../utils/fetchCalls.js'
+
 
 class App extends Component {
   constructor() {
@@ -11,10 +12,15 @@ class App extends Component {
 
   componentDidMount() {
    this.fetchMemberData()
+   this.fetchCampaignData()
   }
 
   fetchMemberData = async () => {
-    const memberData = await apiFetch();
+    const memberData = await membersFetch();
+  }
+
+  fetchCampaignData = async () => {
+    const campaignData = await campaignFetch();
   }
 
 
