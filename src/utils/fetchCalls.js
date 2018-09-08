@@ -1,4 +1,4 @@
-import { key, url } from '../utils/variables.js';
+import { key, url } from '../utils/apiKey.js';
 
 export const apiFetch = async () => {
 
@@ -8,6 +8,7 @@ export const apiFetch = async () => {
     }
     });
     const result = await response.json()
+    debugger;
     return result;
   }
 
