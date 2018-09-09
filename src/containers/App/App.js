@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import { membersFetch, campaignFetch } from '../../utils/fetchCalls.js'
+import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js'
 import { membersCleaner } from '../../utils/dataCleaner'
+import { Route, withRouter } from 'react-router-dom';
+
 
 
 
@@ -13,16 +15,17 @@ class App extends Component {
   }
 
   componentDidMount() {
-   this.fetchMemberData()
-   // this.fetchCampaignData()
+   this.fetchMemberData();
+   this.fetchNonProfit();
   }
 
   fetchMemberData = async () => {
     const memberData = await membersCleaner()
+
   }
 
-  fetchCampaignData = async () => {
-    const campaignData = await campaignFetch();
+  fetchNonProfit = async () => {
+    const nonProfitData = await nonProfitFetch();
   }
 
 
@@ -35,6 +38,8 @@ class App extends Component {
   }
 }
 
-
+export const mapDispatchToProps = dispatch => ({
+  getNpData: nonProfitData => dispatch(nonProfitData)
+})
 
 export default App;
