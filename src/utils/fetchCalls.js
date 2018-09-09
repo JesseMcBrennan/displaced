@@ -1,6 +1,6 @@
-import { memberKey, campaignKey } from '../utils/apiKey.js';
+import { memberKey } from '../utils/apiKey.js';
 const membersUrl = 'https://api.propublica.org/congress/v1/90-115/senate/members.json'
-const campaignUrl = 'https://api.propublica.org/campaign-finance/v1/'
+const nonProfitUrl = 'https://projects.propublica.org/nonprofits/api/v2/search.json?q=Turing'
 
 export const membersFetch = async () => {
   const response = await fetch(membersUrl, {
@@ -13,15 +13,10 @@ export const membersFetch = async () => {
   }
 
 
- export const campaignFetch = async () => {
-  const response = await fetch(campaignUrl, {
-   headers: {
-      'X-API-Key':campaignKey
-    }
-    });
+  export const nonProfitFetch = async () => {
+    const response = await fetch(nonProfitUrl)
     const result = await response.json()
-    debugger;
-    return result;
+    return result
   }
 
 
