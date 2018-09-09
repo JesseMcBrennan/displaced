@@ -1,6 +1,6 @@
 import { membersFetch } from './fetchCalls.js'
 
-export const membersCleaner = async (array) => {
+export const membersCleaner = async () => {
   const fetchedMemberData = await membersFetch();
-  debugger
+  const memberResults = fetchedMemberData.results[0].members
 }
