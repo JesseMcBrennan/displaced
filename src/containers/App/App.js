@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { membersFetch, campaignFetch } from '../../utils/fetchCalls.js'
+import { membersCleaner } from '../../utils/dataCleaner'
+
 
 
 class App extends Component {
@@ -12,18 +14,16 @@ class App extends Component {
 
   componentDidMount() {
    this.fetchMemberData()
-   this.fetchCampaignData()
+   // this.fetchCampaignData()
   }
 
   fetchMemberData = async () => {
-    const memberData = await membersFetch();
+    const memberData = await membersCleaner()
   }
 
   fetchCampaignData = async () => {
     const campaignData = await campaignFetch();
   }
-
-
 
 
   render() {
@@ -34,5 +34,7 @@ class App extends Component {
     )
   }
 }
+
+
 
 export default App;
