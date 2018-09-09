@@ -1,5 +1,6 @@
-import { apiFetch } from './fetchCalls.js'
+import { membersFetch } from './fetchCalls.js'
 
-export const membersCleaner = (array) => {
-  
+export const membersCleaner = async (array) => {
+  const fetchedMemberData = await membersFetch();
+  debugger
 }
