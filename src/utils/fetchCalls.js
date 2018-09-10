@@ -9,12 +9,13 @@ export const membersFetch = async () => {
     }
     });
     const result = await response.json()
+    debugger;
     return result;
   }
 
-
-  export const nonProfitFetch = async () => {
-    const response = await fetch(nonProfitUrl)
+  export const nonProfitFetch = async (search) => {
+    const url = `https://projects.propublica.org/nonprofits/api/v2/search.json?q=${search}`
+    const response = await fetch(url)
     const result = await response.json()
     return result
   }
