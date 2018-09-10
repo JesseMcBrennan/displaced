@@ -1,22 +1,17 @@
-import React, { Component } from 'react'
-import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js'
-import { membersCleaner } from '../../utils/dataCleaner'
+import React, { Component } from 'react';
+import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js';
+import { setSearch } from '../../actions';
+import { membersCleaner } from '../../utils/dataCleaner';
 import { Route, withRouter } from 'react-router-dom';
+import Search from '../Search/Search';
+import { connect } from 'react-redux';
 
 
 
 
 class App extends Component {
-  constructor() {
-    super()
-    this.class = {
-      data: []
-    }
-  }
-
   componentDidMount() {
-   this.fetchMemberData();
-   this.fetchNonProfit();
+  // this.fetchNonProfit()
   }
 
   fetchMemberData = async () => {
@@ -31,15 +26,17 @@ class App extends Component {
 
   render() {
     return(
-      <div>
-        <h1>BONGO</h1>
+      <div className="App">
+        <Route exact path="/" component={Search}/>
       </div>
     )
   }
 }
 
 export const mapDispatchToProps = dispatch => ({
-  getNpData: nonProfitData => dispatch(nonProfitData)
+  setSearch: search => dispatch(setSearch(search))
 })
 
-export default App;
+// export default withRouter(connect(null, mapDispatchToProps))
+
+export default connect(null, mapDispatchToProps)(App)
