@@ -1,5 +1,5 @@
 import { memberKey } from '../utils/apiKey.js';
-const membersUrl = 'https://api.propublica.org/congress/v1/90-115/senate/members.json'
+import { membersFetch } from '../utils/dataCleaner'
 const nonProfitUrl = 'https://projects.propublica.org/nonprofits/api/v2/search.json?q=Turing'
 
 export const membersFetch = async () => {
@@ -9,7 +9,6 @@ export const membersFetch = async () => {
     }
     });
     const result = await response.json()
-    debugger;
     return result;
   }
 
@@ -19,5 +18,18 @@ export const membersFetch = async () => {
     const result = await response.json()
     return result
   }
+
+
+export const nestedNpFetch = async (memberUrl) => {
+  const response = await fetch(memberUrl[0], {
+    headers: {
+      'X-API-Key':memberKey
+    }
+  })
+  const result = await response.json()
+  debugger
+  return result
+}
+
 
 
