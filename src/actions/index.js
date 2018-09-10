@@ -1,4 +1,4 @@
-export const setSearch = search => ({
+export const setSearch = searchResults => ({
   type: 'SET_SEARCH',
-  search
+  searchResults
 })
