@@ -7,22 +7,18 @@ import Search from '../Search/Search';
 import { connect } from 'react-redux';
 
 
-
-
 class App extends Component {
   componentDidMount() {
-  // this.fetchNonProfit()
+  this.fetchMemberData()
   }
 
   fetchMemberData = async () => {
     const memberData = await membersCleaner()
-
   }
 
   fetchNonProfit = async () => {
     const nonProfitData = await nonProfitFetch();
   }
-
 
   render() {
     return(

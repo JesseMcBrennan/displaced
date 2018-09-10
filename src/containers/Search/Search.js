@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
 import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js'
+import { setSearch } from '../../actions';
 import PropTypes from 'prop-types';
 import './Search.css'
 
@@ -22,7 +23,13 @@ export class Search extends Component {
 
   handleSubmit = async (e) => {
     e.preventDefault();
-    const submitSearch = await nonProfitFetch(this.state.search)
+    const searchResults = await nonProfitFetch(this.state.search)
+    this.props.setSearch(searchResults)
+    // debugger;
+    this.setState({
+      search: ''
+    })
+    return searchResults
   }
 
   render() {
@@ -40,5 +47,14 @@ export class Search extends Component {
   }
 }
 
+export const mapStateToProps = state => ({
+  searchResults: state.searchResults
+})
 
-export default Search;
+export const mapDispatchToProps = dispatch => ({ 
+  setSearch: searchResults => dispatch(setSearch(searchResults))
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Search)
+
