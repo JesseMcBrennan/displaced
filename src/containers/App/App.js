@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js';
+import { Route, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { NavBar } from '../NavBar/NavBar'
 import { setSearch } from '../../actions';
 import { membersCleaner } from '../../utils/dataCleaner';
-import { Route, withRouter } from 'react-router-dom';
 import Search from '../Search/Search';
-import { connect } from 'react-redux';
+import './App.css'
 
 
 class App extends Component {
   componentDidMount() {
-  this.fetchMemberData()
+  // this.fetchMemberData()
   }
 
   fetchMemberData = async () => {
-    const memberData = await membersCleaner()
+    const memberData = await membersFetch()
   }
 
   fetchNonProfit = async () => {
@@ -22,9 +24,10 @@ class App extends Component {
 
   render() {
     return(
-      <div className="App">
-        <Route exact path="/" component={Search}/>
-      </div>
+        <div className="App">
+          <Route exact path="/" component={NavBar}/>
+          <Route exact path="/" component={Search}/>
+        </div>
     )
   }
 }
