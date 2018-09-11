@@ -24,37 +24,57 @@ export class Search extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     const searchResults = await nonProfitFetch(this.state.search)
-    this.props.setSearch(searchResults)
-    // debugger;
+    this.props.setSearch(searchResults.organizations)
     this.setState({
       search: ''
     })
-    return searchResults
   }
 
   render() {
     return (
-      <form className="search-form" onSubmit={this.handleSubmit}>
-        <input 
-          name='search'
-          value={this.state.search}
-          onChange={this.handleChange}
-          type='text'
-        />
-        <button className='submitButton'>Submit</button>
-      </form>
+      <div className='search-container'>
+        <section className='search-header'>
+        </section>
+        <form className="search-form" onSubmit={this.handleSubmit}>
+          <input 
+            name='search'
+            value={this.state.search}
+            onChange={this.handleChange}
+            type='text'
+          />
+          <select>
+            <option 
+              name='chamber'
+              value={this.state.chamber}
+              onChange={this.handleChange}
+              type='dropdown'
+            >
+            Senate
+            </option>         
+            <option 
+              name='chamber'
+              value={this.state.chamber}
+              onChange={this.handleChange}
+              type='dropdown'
+            >
+            House  
+            </option>        
+          </select>
+          <button className='submitButton'>Submit</button>
+        </form>
+      </div>
     )
   }
 }
 
-export const mapStateToProps = state => ({
-  searchResults: state.searchResults
-})
+// export const mapStateToProps = state => ({
+//   searchResults: state.searchResults
+// })
 
 export const mapDispatchToProps = dispatch => ({ 
   setSearch: searchResults => dispatch(setSearch(searchResults))
 })
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Search)
+export default connect(null, mapDispatchToProps)(Search)
 
