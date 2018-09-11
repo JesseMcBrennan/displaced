@@ -2,9 +2,11 @@ import { memberKey } from '../utils/apiKey.js';
 import { membersCleaner } from '../utils/dataCleaner'
 const nonProfitUrl = 'https://projects.propublica.org/nonprofits/api/v2/search.json?q=Turing'
 
-export const membersFetch = async (chamber, state) => {
-  const url = `https://api.propublica.org/congress/v1/members/${chamber}/${state}/current.json` 
+export const membersFetch = async (chamber, state, district) => {
+  // const url = `https://api.propublica.org/congress/v1/members/${chamber}/${state}/current.json` 
                         //https://api.propublica.org/congress/v1/members/senate/colorado/current.json
+  const url = `https://api.propublica.org/congress/v1/members/${chamber}/${state}/${district}/current.json`
+  debugger
   // const url = "https://api.propublica.org/congress/v1/members/senate/co/current.json"
   const response = await fetch(url, {
    headers: {
@@ -12,7 +14,7 @@ export const membersFetch = async (chamber, state) => {
     }
     });
     const result = await response.json()
-    debugger;
+    // debugger;
     return result;
   }
 
