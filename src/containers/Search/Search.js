@@ -5,13 +5,15 @@ import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js'
 import { setSearch } from '../../actions';
 import PropTypes from 'prop-types';
 import './Search.css'
+import { getDistricts } from 'congressional-districts'
 
 export class Search extends Component {
   constructor() {
     super();
     this.state = {
       chamber: '',
-      state: ''
+      state: '',
+      zipcode: ''
     }
   }
 
@@ -24,10 +26,12 @@ export class Search extends Component {
 
   handleSubmit = async (e) => {
     e.preventDefault();
-    const searchResults = await membersFetch(this.state.chamber, this.state.state)
+    const zipcode = this.state.zipcode
+    let district = getDistricts(zipcode)
+    const searchResults = await membersFetch(this.state.chamber, this.state.state, this.state.district)
     this.props.setSearch(searchResults.organizations)
     this.setState({
-      state: ''
+      zipcode: ''
     })
   }
 
@@ -110,7 +114,14 @@ export class Search extends Component {
               <option value="WV">West Virginia</option>
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
-            </select>               
+            </select>   
+            <input
+              name='zipcode'
+              value={this.state.zipcode}
+              onChange={this.handleChange}
+              placeholder='Zipcode'
+              type='number'
+            />           
           <button className='submitButton'>Submit</button>
         </form>
       </div>
