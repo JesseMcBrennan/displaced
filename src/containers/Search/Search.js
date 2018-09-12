@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
 import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js'
+import { membersCleaner } from '../../utils/dataCleaner.js'
 import { setSearch } from '../../actions';
 import PropTypes from 'prop-types';
 import './Search.css'
@@ -32,8 +33,8 @@ export class Search extends Component {
 
     if (validate === true) {
 
-    const searchResults = await membersFetch(this.state.chamber, this.state.state, district)
-    this.props.setSearch(searchResults.results)
+    const searchResults = await membersCleaner(this.state.chamber, this.state.state, district)
+    this.props.setSearch(searchResults)
     this.setState({
       zipcode: ''
     })
