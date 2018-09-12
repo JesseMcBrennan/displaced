@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { NavBar } from '../NavBar/NavBar'
 import { setSearch } from '../../actions';
 import { membersCleaner } from '../../utils/dataCleaner';
+import MemberContainer from '../MemberContainer/MemberContainer'
 import Search from '../Search/Search';
 import './App.css'
 
@@ -14,26 +15,19 @@ class App extends Component {
   // this.fetchMemberData()
   }
 
-  fetchMemberData = async () => {
-    const memberData = await membersFetch()
-  }
-
-  fetchNonProfit = async () => {
-    const nonProfitData = await nonProfitFetch();
-  }
-
   render() {
     return(
         <div className="App">
           <Route exact path="/" component={NavBar}/>
           <Route exact path="/" component={Search}/>
+          <Route exact path="/MemberContainer" component={MemberContainer}/>
         </div>
     )
   }
 }
 
 export const mapDispatchToProps = dispatch => ({
-  setSearch: search => dispatch(setSearch(search))
+
 })
 
 // export default withRouter(connect(null, mapDispatchToProps))
