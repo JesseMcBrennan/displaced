@@ -6,7 +6,6 @@ export const membersFetch = async (chamber, state, district) => {
   // const url = `https://api.propublica.org/congress/v1/members/${chamber}/${state}/current.json` 
                         //https://api.propublica.org/congress/v1/members/senate/colorado/current.json
   const url = `https://api.propublica.org/congress/v1/members/${chamber}/${state}/${district}/current.json`
-  debugger
   // const url = "https://api.propublica.org/congress/v1/members/senate/co/current.json"
   const response = await fetch(url, {
    headers: {
@@ -14,7 +13,6 @@ export const membersFetch = async (chamber, state, district) => {
     }
     });
     const result = await response.json()
-    // debugger;
     return result;
   }
 
