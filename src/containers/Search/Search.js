@@ -5,7 +5,7 @@ import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js'
 import { setSearch } from '../../actions';
 import PropTypes from 'prop-types';
 import './Search.css'
-import { getDistricts } from 'congressional-districts'
+import { getDistricts, confirm } from 'congressional-districts'
 
 export class Search extends Component {
   constructor() {
@@ -27,12 +27,20 @@ export class Search extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     const zipcode = this.state.zipcode
-    let district = getDistricts(zipcode)
-    const searchResults = await membersFetch(this.state.chamber, this.state.state, this.state.district)
-    this.props.setSearch(searchResults.organizations)
+    const district = getDistricts(zipcode)
+    const validate = confirm(zipcode, district)
+
+    if (validate === true) {
+
+    const searchResults = await membersFetch(this.state.chamber, this.state.state, district)
+    this.props.setSearch(searchResults.results)
     this.setState({
       zipcode: ''
     })
+
+    } else {
+      console.log('FAIL')
+    }
   }
 
   render() {
@@ -52,7 +60,7 @@ export class Search extends Component {
               value='senate'
               type='dropdown'
             >
-            Senate
+            Senate - DOES NOT WORK
             </option>         
             <option 
               value='house'
