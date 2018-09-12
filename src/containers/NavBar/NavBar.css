@@ -1,5 +1,5 @@
 .navBar {
-  width: 100%;
+  width: 97.2%;
   height: 4em;
   background-color: rgba(0, 0, 0, 0.3);
   margin: 0;
@@ -14,5 +14,4 @@ ul {
 h1 {
   margin: 0;
   padding-top: 1%;
-  width: 20%;
 }

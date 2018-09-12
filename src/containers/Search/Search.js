@@ -40,7 +40,7 @@ export class Search extends Component {
     })
 
     } else {
-      console.log('FAIL')
+      alert('Invalid Zipcode')
     }
   }
 
@@ -61,7 +61,7 @@ export class Search extends Component {
               value='senate'
               type='dropdown'
             >
-            Senate - DOES NOT WORK
+            Senate
             </option>         
             <option 
               value='house'
@@ -131,7 +131,7 @@ export class Search extends Component {
               placeholder='Zipcode'
               type='number'
             />           
-          <button className='submitButton'>Submit</button>
+          <button className='submitButton' >Submit</button>
         </form>
       </div>
     )
