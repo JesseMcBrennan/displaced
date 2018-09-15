@@ -3,6 +3,7 @@
   height: 4em;
   background-color: rgba(0, 0, 0, 0.3);
   margin: 0;
+  padding-top: .5%;
 }
 
 ul {
@@ -14,4 +15,16 @@ ul {
 h1 {
   margin: 0;
   padding-top: 1%;
+  font-family: 'Reenie Beanie', cursive;
+  Font Family: Reenie Beanie;
+  Font-Style: Regular;
+  Font-Size: 48px;
+  Line-Height: 48px;
+  Align: Left;
+  display: inline;
 }
+
+.title-middle {
+  color: #FFFFFF;
+}
+

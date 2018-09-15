@@ -1,0 +1,31 @@
+.moreInfo {
+  width: 10%;
+  position: center;
+}
+
+.Card {
+  text-align: center;
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 1rem 0 1rem;
+  cursor: pointer;
+  filter: brightness(70%);
+  opacity: 0.95;
+  height: 15rem;
+  box-shadow: 0 0 80px #000000;
+  border-radius: 8px;
+  background-color: #FFFFFF90;
+}
+
+
+h2 {
+  font-size: .6em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+

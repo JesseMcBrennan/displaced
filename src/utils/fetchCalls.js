@@ -15,13 +15,13 @@ export const membersFetch = async (chamber, state, district) => {
   }
 
 export const membersMoreInfo = async (url) => {
+  debugger;
   const response = await fetch(url, {
     headers: {
       'X-API-Key':memberKey
     }
   });
   const result = await response.json()
-  const fetchedAdditionalMemberData = Promise.all(result)
 }
 
 

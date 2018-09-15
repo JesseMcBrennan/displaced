@@ -16,6 +16,7 @@ class App extends Component {
   }
 
   render() {
+    const { members } = this.props
     return(
         <div className="App">
           <Route exact path="/" component={NavBar}/>
@@ -26,10 +27,14 @@ class App extends Component {
   }
 }
 
+export const mapStateToProps = state => ({
+  members: state.searchResults
+})
+
 export const mapDispatchToProps = dispatch => ({
 
 })
 
 // export default withRouter(connect(null, mapDispatchToProps))
 
-export default connect(null, mapDispatchToProps)(App)
+export default withRouter(connect(null, mapDispatchToProps)(App))
