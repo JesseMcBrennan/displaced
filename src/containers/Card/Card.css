@@ -4,16 +4,14 @@
 }
 
 .Card {
-  text-align: center;
   width: 80rem;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
   margin: 2rem 1rem 0 1rem;
   cursor: pointer;
   filter: brightness(95%);
   opacity: 0.95;
-  height: 15rem;
+  height: 18rem;
   box-shadow: 0 0 80px #000000;
   border-radius: 8px;
   background-color: rgba(255,255,255);
@@ -24,15 +22,15 @@
 
 
 h2 {
-  font-size: 1em;
+  font-size: 0.5em;
 }
 
-h4 {
-  font-size: 1em;
+a {
+  font-size: 0.5em;
 }
 
 iframe {
-  height: 200px;
+  height: 230px;
   widght: 600px;
 }
 
@@ -40,4 +38,9 @@ iframe {
   background-color: rgba(255,255,255);
 }
 
+.text-container {
+  text-align: left;
+  height: 100%;
+  line-height: 1;
+}
 

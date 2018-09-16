@@ -4,6 +4,9 @@ import { withRouter, NavLink } from 'react-router-dom';
 import { membersFetch, membersMoreInfo } from '../../utils/fetchCalls.js';
 import './Card.css'
 
+
+
+
 export class Card extends Component {
   constructor() {
     super()
@@ -22,14 +25,15 @@ export class Card extends Component {
   const { member } = this.props
   return (
     <div className='Card'>
-      <h2>{member.role} {member.name}</h2>
-      <h4>Party: {member.party}</h4>
-      <iframe id="inlineFrameExample"
-          title="Inline Frame Example"
-          width="300"
-          height="200"
-          src="https://www.google.com">
-      </iframe>
+      <div className='text-container'>
+      <h2>{member.title} {member.firstName} {member.lastName}</h2>
+      <h2>Party: {member.party}</h2>
+      <h2>District: {member.district}</h2>
+      <h2>Office: {member.office} </h2>
+      <h2>Phone Number: {member.phone} </h2>
+      <a href={member.memberUrl}>{member.memberUrl}</a>
+      </div>
+      <button>More Information</button>
     </div>
   )
   }
