@@ -22,11 +22,12 @@ export class Card extends Component {
   const { member } = this.props
   return (
     <div className='Card'>
+      <div className='text-container'>
       <h2>{member.role} {member.name}</h2>
-      <h4>Party: {member.party}</h4>
+      <h2>Party: {member.party}</h2>
+      </div>
       <iframe id="inlineFrameExample"
-          title="Inline Frame Example"
-          width="300"
+          width="600"
           height="200"
           src="https://www.google.com">
       </iframe>
