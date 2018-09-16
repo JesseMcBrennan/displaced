@@ -14,7 +14,7 @@ export class Card extends Component {
 
   handleSubmit = (e) => {
   const url = this.props.member.member_url
-  
+  console.log('hi')
   membersMoreInfo(url)
 }
 
@@ -24,7 +24,12 @@ export class Card extends Component {
     <div className='Card'>
       <h2>{member.role} {member.name}</h2>
       <h4>Party: {member.party}</h4>
-      <button className='moreInfo' onClick={() => membersMoreInfo(member.member_uri)}>More Information</button>
+      <iframe id="inlineFrameExample"
+          title="Inline Frame Example"
+          width="300"
+          height="200"
+          src="https://www.google.com">
+      </iframe>
     </div>
   )
   }
