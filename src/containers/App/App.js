@@ -7,7 +7,8 @@ import { setSearch } from '../../actions';
 import { membersCleaner } from '../../utils/dataCleaner';
 import MemberContainer from '../MemberContainer/MemberContainer'
 import Search from '../Search/Search';
-import './App.css'
+import { ContactForm } from '../ContactForm/ContactForm';
+import './App.css';
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route exact path="/" component={NavBar}/>
           <Route exact path="/" component={Search}/>
           <Route exact path="/" component={MemberContainer}/>
+          <Route exact path="/ContactForm" component={ContactForm}/>
         </div>
     )
   }
