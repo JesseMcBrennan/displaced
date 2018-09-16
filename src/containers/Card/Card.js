@@ -29,7 +29,7 @@ export class Card extends Component {
       <iframe id="inlineFrameExample"
           width="600"
           height="200"
-          src="https://www.google.com">
+          src="https://www.nytimes.com/search?query=Merkley%252C+Jeff+">
       </iframe>
     </div>
   )

@@ -1,4 +1,4 @@
-import { membersFetch } from './fetchCalls.js'
+import { membersFetch, membersMoreInfo } from './fetchCalls.js'
 
 export const membersCleaner = async (chamber, state, district) => {
   const fetchedMemberData = await membersFetch(chamber, state, district);
@@ -13,6 +13,8 @@ export const membersCleaner = async (chamber, state, district) => {
         twitter: member.twitter_id,
         member_url: member.api_uri
     })
+    const memberInfo = membersMoreInfo(member.api_uri)
+    debugger
     return membersData
   },[])
   return membersData
