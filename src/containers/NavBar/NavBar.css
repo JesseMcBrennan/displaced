@@ -1,9 +1,9 @@
 .navBar {
   width: 97.2%;
   height: 4em;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
-  padding-top: .5%;
+  padding-top: 1.1%;
 }
 
 ul {
@@ -22,9 +22,11 @@ h1 {
   Line-Height: 48px;
   Align: Left;
   display: inline;
+  color: #C4C4C4;
 }
 
 .title-middle {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 

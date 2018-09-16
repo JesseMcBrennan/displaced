@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-image: url('assets/background-img.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   font-family: sans-serif;
 }
 
