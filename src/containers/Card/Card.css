@@ -4,11 +4,11 @@
 }
 
 .Card {
-  text-align: center;
+  /*text-align: center;*/
   width: 80rem;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
+  /*flex-direction: column;*/
   margin: 2rem 1rem 0 1rem;
   cursor: pointer;
   filter: brightness(95%);
@@ -24,12 +24,9 @@
 
 
 h2 {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
-h4 {
-  font-size: 1em;
-}
 
 iframe {
   height: 200px;
@@ -40,4 +37,8 @@ iframe {
   background-color: rgba(255,255,255);
 }
 
+.text-container {
+  text-align: left;
+  height: 100%;
+}
 
