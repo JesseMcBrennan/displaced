@@ -10,7 +10,8 @@ export const membersFetch = async (chamber, state, district) => {
     }
     });
     const result = await response.json()
-    const fetchedMembersData = result
+    const moreInfo =  await membersMoreInfo(result.results[0].api_uri)
+    const fetchedMembersData = moreInfo
     return fetchedMembersData
   }
 
@@ -21,6 +22,7 @@ export const membersMoreInfo = async (url) => {
     }
   });
   const result = await response.json()
+  return result
 }
 
 
