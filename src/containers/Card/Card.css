@@ -1,0 +1,43 @@
+.moreInfo {
+  width: 10%;
+  position: center;
+}
+
+.Card {
+  text-align: center;
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 1rem 0 1rem;
+  cursor: pointer;
+  filter: brightness(95%);
+  opacity: 0.95;
+  height: 15rem;
+  box-shadow: 0 0 80px #000000;
+  border-radius: 8px;
+  background-color: rgba(255,255,255);
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 1em;
+  color: rgba(68,68,68);
+}
+
+
+h2 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+iframe {
+  height: 200px;
+  widght: 600px;
+}
+
+.inlineFrameExample {
+  background-color: rgba(255,255,255);
+}
+
+

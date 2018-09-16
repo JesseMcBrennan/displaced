@@ -6,7 +6,7 @@ import './NavBar.css'
 export const NavBar = () => {
   return(
     <ul className='navBar'>
-      <h1>represented</h1>
+      <h1>repre</h1><h1 className="title-middle">sent</h1><h1>ed</h1>
       <li></li>
       <li></li>
       <li></li>

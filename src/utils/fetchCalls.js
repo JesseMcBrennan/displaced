@@ -14,12 +14,14 @@ export const membersFetch = async (chamber, state, district) => {
     return fetchedMembersData
   }
 
-export const membersMoreInfo = async (memberObject) => {
-  const url = memberObject.api_uri
-  debugger;
+export const membersMoreInfo = async (url) => {
+  const response = await fetch(url, {
+    headers: {
+      'X-API-Key':memberKey
+    }
+  });
+  const result = await response.json()
 }
-
-
 
 
 

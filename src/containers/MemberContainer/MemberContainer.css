@@ -1,0 +1,19 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.memberInfo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.memberInfo input {
+  width: 100%;
+}
+
+.memberContainer {
+  display: flex;
+  justify-content: center;
+}
