@@ -11,17 +11,20 @@
   flex-direction: column;
   margin: 2rem 1rem 0 1rem;
   cursor: pointer;
-  filter: brightness(70%);
+  filter: brightness(95%);
   opacity: 0.95;
   height: 15rem;
   box-shadow: 0 0 80px #000000;
   border-radius: 8px;
-  background-color: #FFFFFF90;
+  background-color: rgba(255,255,255);
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 1em;
+  color: #C4C4C4;
 }
 
 
 h2 {
-  font-size: .6em;
+  font-size: 1em;
 }
 
 h4 {
