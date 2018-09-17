@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter, NavLink } from 'react-router-dom';
+import { Link, withRouter, NavLink } from 'react-router-dom';
 import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js'
 import { membersCleaner } from '../../utils/dataCleaner.js'
 import { setSearch } from '../../actions';
@@ -35,6 +35,7 @@ export class Search extends Component {
 
     const searchResults = await membersCleaner(this.state.chamber, this.state.state, district)
     this.props.setSearch(searchResults)
+    this.props.history.push('/');
     this.setState({
       zipcode: ''
     })
@@ -131,7 +132,7 @@ export class Search extends Component {
               placeholder='Zipcode'
               type='number'
             />           
-          <button className='submitButton' >Submit</button>
+          <button className='submitButton'>Submit</button>
         </form>
       </div>
     )

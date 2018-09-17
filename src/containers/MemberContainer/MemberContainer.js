@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import './MemberContainer.css'
 import { Card } from '../Card/Card' 
 
-export const MemberContainer = ({ members }) => {
+export const MemberContainer = ({ members, history }) => {
   const displayMembers = members.map((member, index) => {
     if(!members.length) {
       return;
@@ -17,6 +17,7 @@ export const MemberContainer = ({ members }) => {
         {...member}
         member={member}
         key={index}
+        history={history}
       />
     )
   })

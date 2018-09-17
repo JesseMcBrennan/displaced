@@ -13,8 +13,9 @@ export class Card extends Component {
   }
 
   handleSubmit = (e) => {
-  const url = this.props.member.member_url
-  membersMoreInfo(url)
+  const { history } = this.props;
+  const url = this.props.member.member_url;
+  history.push('/ContactForm')
 }
 
   render() {
@@ -34,7 +35,7 @@ export class Card extends Component {
           title="Inline Frame Example"
           src={member.nyt}>
       </iframe>
-      <button onClick={() => this.handleSubmit()}>Write your Representative</button>
+      <button onClick={this.handleSubmit}>Write your Representative</button>
       </div>
     </div>
   )
@@ -45,7 +46,7 @@ export const mapStateToProps = state => ({
   members: state.searchResults
 })
 
-export default connect(mapStateToProps)(Card);
+export default withRouter(connect(mapStateToProps)(Card));
 
 
 
