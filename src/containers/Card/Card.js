@@ -4,9 +4,6 @@ import { withRouter, NavLink } from 'react-router-dom';
 import { membersFetch, membersMoreInfo } from '../../utils/fetchCalls.js';
 import './Card.css'
 
-
-
-
 export class Card extends Component {
   constructor() {
     super()
@@ -17,7 +14,6 @@ export class Card extends Component {
 
   handleSubmit = (e) => {
   const url = this.props.member.member_url
-  console.log('hi')
   membersMoreInfo(url)
 }
 
@@ -34,13 +30,11 @@ export class Card extends Component {
       <a href={member.memberUrl}>{member.memberUrl}</a>
       </div>
       <div className="iframe-section">
-      <iframe id="inlineFrameExample"
+      <iframe id="card-iframe"
           title="Inline Frame Example"
-          width="300"
-          height="200"
           src={member.nyt}>
       </iframe>
-      <button>Write your Representative</button>
+      <button onClick={() => this.handleSubmit()}>Write your Representative</button>
       </div>
     </div>
   )

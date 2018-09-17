@@ -7,7 +7,7 @@ import { setSearch } from '../../actions';
 import { membersCleaner } from '../../utils/dataCleaner';
 import MemberContainer from '../MemberContainer/MemberContainer'
 import Search from '../Search/Search';
-import { ContactForm } from '../ContactForm/ContactForm';
+import ContactForm from '../ContactForm/ContactForm';
 import './App.css';
 
 
@@ -18,12 +18,13 @@ class App extends Component {
 
   render() {
     const { members } = this.props
+
     return(
         <div className="App">
           <Route exact path="/" component={NavBar}/>
           <Route exact path="/" component={Search}/>
           <Route exact path="/" component={MemberContainer}/>
-          <Route exact path="/ContactForm" component={ContactForm}/>
+          <Route exact path="/ContactForm" render={() => <ContactForm members={members}/>}/>
         </div>
     )
   }

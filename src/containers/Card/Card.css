@@ -29,8 +29,8 @@ a {
   font-size: 0.5em;
 }
 
-iframe {
-  height: 230px;
+.iframe-section {
+  height: 250px;
   width: 600px;
 }
 

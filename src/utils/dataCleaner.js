@@ -3,7 +3,6 @@ import { membersFetch, membersMoreInfo } from './fetchCalls.js'
 export const membersCleaner = async (chamber, state, district) => {
   const fetchedMemberData = await membersFetch(chamber, state, district);
   const uncleanMemberData = await fetchedMemberData.results
-  debugger;
   const membersData = uncleanMemberData.reduce((membersData, member) => {
     membersData.push({
         firstName: member.first_name,

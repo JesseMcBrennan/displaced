@@ -1,0 +1,10 @@
+.pdf {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  margin-top: 30px;
+  height: 600px;
+  width: 600px;
+}
