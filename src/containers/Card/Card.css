@@ -31,7 +31,12 @@ a {
 
 iframe {
   height: 230px;
-  widght: 600px;
+  width: 600px;
+}
+
+.iframe-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .inlineFrameExample {
@@ -41,6 +46,6 @@ iframe {
 .text-container {
   text-align: left;
   height: 100%;
-  line-height: 1;
+  line-height: .5;
 }
 
