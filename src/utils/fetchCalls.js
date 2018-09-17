@@ -10,6 +10,7 @@ export const membersFetch = async (chamber, state, district) => {
     }
     });
     const result = await response.json()
+    debugger;
     const moreInfo =  await membersMoreInfo(result.results[0].api_uri)
     const fetchedMembersData = moreInfo
     return fetchedMembersData
