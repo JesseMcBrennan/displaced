@@ -33,7 +33,15 @@ export class Card extends Component {
       <h2>Phone Number: {member.phone} </h2>
       <a href={member.memberUrl}>{member.memberUrl}</a>
       </div>
-      <button>More Information</button>
+      <div className="iframe-section">
+      <iframe id="inlineFrameExample"
+          title="Inline Frame Example"
+          width="300"
+          height="200"
+          src={member.nyt}>
+      </iframe>
+      <button>Write your Representative</button>
+      </div>
     </div>
   )
   }
