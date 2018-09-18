@@ -12,21 +12,21 @@ describe('ContactPdf', () => {
   beforeEach(() => {
     wrapper = shallow(
       <ContactPdf />
-    )
-  })
+    );
+  });
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
-describe('mapStateToProps', () => {
-  it('should return an object', () => {
-    const mockResult = { members: {} }
+  });
+  describe('mapStateToProps', () => {
+    it('should return an object', () => {
+      const mockResult = { members: {} };
 
-    const expected = {}
+      const expected = {};
 
-    const mappedProps = mapStateToProps(mockResult)
+      const mappedProps = mapStateToProps(mockResult);
 
-    expect(mappedProps).toEqual(expected)
+      expect(mappedProps).toEqual(expected);
 
-    })
-  })
-})
+    });
+  });
+});

@@ -2,87 +2,87 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { NavBar } from '../NavBar/NavBar.js'
-import { setMessage } from '../../actions'
-import './ContactForm.css'
+import { NavBar } from '../NavBar/NavBar.js';
+import { setMessage } from '../../actions';
+import './ContactForm.css';
 
 export class ContactForm extends Component {
   constructor() {
-    super()
+    super();
     this.state={
       name: '',
       body: '',
       signature: '',
       error: false
-    }
+    };
   }
 
   handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     this.setState({
       [name]:value
-    })
+    });
   }
 
   handleSubmit = (e) => {
-    e.preventDefault()
-    const { history, member } = this.props
-    this.props.setMessage(this.state)
+    e.preventDefault();
+    const { history, member } = this.props;
+    this.props.setMessage(this.state);
     this.setState({
       name: '',
       body: '',
       signature: ''
-    })
-    if(this.state.body.length && member) {
+    });
+    if (this.state.body.length && member) {
 
-    history.push('/ContactPdf')
+      history.push('/ContactPdf');
     } else {
-      alert('Please enter a message')
+      alert('Please enter a message');
       this.setState({
         error: true
-      })
+      });
     }
   }
 
   render () {
-    return(
-        <form className="ContactForm" onSubmit={this.handleSubmit}>
-            <input  
-              name='name'
-              value={this.state.name}
-              onChange={this.handleChange}
-              placeholder='Enter your Name'
-              type='text'
-            />              
-            <textarea 
-              rows="4"
-              cols="50" 
-              name='body'
-              value={this.state.body}
-              onChange={this.handleChange}
-              placeholder='Enter your Message'
-              className='inputBody'
-            />          
-            <input 
-              name='signature'
-              value={this.state.signature}
-              onChange={this.handleChange}
-              placeholder='Enter your Signature'
-              type='text'
-            /> 
-            <button>Submit your Message</button>    
-        </form>
-    )
+    return (
+      <form className="ContactForm" onSubmit={this.handleSubmit}>
+        <input  
+          name='name'
+          value={this.state.name}
+          onChange={this.handleChange}
+          placeholder='Enter your Name'
+          type='text'
+        />              
+        <textarea 
+          rows="4"
+          cols="50" 
+          name='body'
+          value={this.state.body}
+          onChange={this.handleChange}
+          placeholder='Enter your Message'
+          className='inputBody'
+        />          
+        <input 
+          name='signature'
+          value={this.state.signature}
+          onChange={this.handleChange}
+          placeholder='Enter your Signature'
+          type='text'
+        /> 
+        <button>Submit your Message</button>    
+      </form>
+    );
   }
 }
 
 export const mapStateToProps = state => ({
   member: state.searchResults
-})
+});
 
 export const mapDispatchToProps = dispatch => ({
   setMessage: createMessage => dispatch(setMessage(createMessage))
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);
 

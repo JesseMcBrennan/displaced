@@ -10,11 +10,11 @@ describe('Search', () => {
   beforeEach(() => {
     wrapper = shallow(
       <Search />
-    )
-  })
+    );
+  });
   it('should match the snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
+    expect(wrapper).toMatchSnapshot();
+  });
 
   describe('mapDispatchToProps', () => {
     it('should return an object', () => {
@@ -24,6 +24,6 @@ describe('Search', () => {
 
       mappedProps.setSearch();
       expect(mockDispatch).toHaveBeenCalled();
-    })
-  })
-})
+    });
+  });
+});

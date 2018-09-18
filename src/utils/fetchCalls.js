@@ -1,19 +1,19 @@
 import { memberKey } from '../utils/apiKey.js';
-import { membersCleaner } from '../utils/dataCleaner'
+import { membersCleaner } from '../utils/dataCleaner';
 
 export const membersFetch = async (chamber, state, district) => {
-  const url = `https://api.propublica.org/congress/v1/members/${chamber}/${state}/${district}/current.json`
+  const url = `https://api.propublica.org/congress/v1/members/${chamber}/${state}/${district}/current.json`;
 
   const response = await fetch(url, {
-   headers: {
+    headers: {
       'X-API-Key':memberKey
     }
-    });
-    const result = await response.json()
-    const moreInfo =  await membersMoreInfo(result.results[0].api_uri)
-    const fetchedMembersData = moreInfo
-    return fetchedMembersData
-  }
+  });
+  const result = await response.json();
+  const moreInfo =  await membersMoreInfo(result.results[0].api_uri);
+  const fetchedMembersData = moreInfo;
+  return fetchedMembersData;
+};
 
 export const membersMoreInfo = async (url) => {
   const response = await fetch(url, {
@@ -21,9 +21,9 @@ export const membersMoreInfo = async (url) => {
       'X-API-Key':memberKey
     }
   });
-  const result = await response.json()
-  return result
-}
+  const result = await response.json();
+  return result;
+};
 
 
 

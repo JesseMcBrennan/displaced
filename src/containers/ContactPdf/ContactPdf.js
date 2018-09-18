@@ -33,19 +33,19 @@ export const MyDocument = ({ members, message }) => (
 );
 
 export const ContactPdf = ({members, message}) => {
-return(
+  return (
     <div>
       <MyDocument members={members} message={message}/>
     </div>
-  )
-}
+  );
+};
 
 export const mapStateToProps = state => ({
   members: state.searchResults,
   message: state.messages
-})
+});
 
-export default connect(mapStateToProps)(ContactPdf)
+export default connect(mapStateToProps)(ContactPdf);
 
 ContactPdf.propTypes = {
   members: PropTypes.object,

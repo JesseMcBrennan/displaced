@@ -1,35 +1,35 @@
 import { ContactForm, mapStateToProps, mapDispatchToProps } from './ContactForm';
 import React from 'react';
 import { shallow } from 'enzyme';
-import { setMessage } from '../../actions'
-import { mockMemberData, mockTitle } from '../../utils/mockData/mockMemberData'
+import { setMessage } from '../../actions';
+import { mockMemberData, mockTitle } from '../../utils/mockData/mockMemberData';
 
 describe('ContactForm', () => {
   let wrapper;
   let mockHistory;
 
   beforeEach(() => {
-    mockHistory = { push: jest.fn ()}
+    mockHistory = { push: jest.fn()};
     wrapper = shallow(
-      <ContactForm />)
-  })
+      <ContactForm />);
+  });
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
-describe('mapStateToProps', () => {
-  it('should return an object with ', () => {
+  describe('mapStateToProps', () => {
+    it('should return an object with ', () => {
 
-  const mockState = {
-    member:{}
-  }
+      const mockState = {
+        member:{}
+      };
 
-  const expected = {}
+      const expected = {};
 
-  const mappedProps = mapStateToProps(mockState)
+      const mappedProps = mapStateToProps(mockState);
 
-  expect(mappedProps).toEqual(expected)
-  })
-})
-})
+      expect(mappedProps).toEqual(expected);
+    });
+  });
+});

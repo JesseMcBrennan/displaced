@@ -1,8 +1,8 @@
 export const messageReducer = (state=[], action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'SET_MESSAGE':
-      return action.createMessage
+      return action.createMessage;
     default:
-      return state
+      return state;
   }
-}
+};
