@@ -26,7 +26,6 @@ export class Card extends Component {
       <div className='text-container'>
       <h2>{member.title} {member.firstName} {member.lastName}</h2>
       <h2>Party: {member.party}</h2>
-      <h2>District: {member.district}</h2>
       <h2>Office: {member.office} </h2>
       <h2>Phone Number: {member.phone} </h2>
       <a href={member.memberUrl}>{member.memberUrl}</a>
@@ -44,6 +43,7 @@ export class Card extends Component {
 }
 
 Card.propTypes = {
-  member: PropTypes.object
+  member: PropTypes.object,
+  history: PropTypes.object
 };
 
