@@ -43,14 +43,7 @@ export class Card extends Component {
   }
 }
 
-export const mapStateToProps = state => ({
-  members: state.searchResults
-})
-
-export default withRouter(connect(mapStateToProps)(Card));
-
-
 Card.propTypes = {
-  members: PropTypes.object
+  member: PropTypes.object
 };
 

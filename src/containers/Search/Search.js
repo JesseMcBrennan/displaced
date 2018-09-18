@@ -139,10 +139,6 @@ export class Search extends Component {
   }
 }
 
-// export const mapStateToProps = state => ({
-//   searchResults: state.searchResults
-// })
-
 export const mapDispatchToProps = dispatch => ({ 
   setSearch: searchResults => dispatch(setSearch(searchResults))
 })

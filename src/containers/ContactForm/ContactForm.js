@@ -12,7 +12,8 @@ export class ContactForm extends Component {
     this.state={
       name: '',
       body: '',
-      signature: ''
+      signature: '',
+      error: false
     }
   }
 
@@ -25,14 +26,23 @@ export class ContactForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    const { history } = this.props
+    const { history, member } = this.props
     this.props.setMessage(this.state)
     this.setState({
       name: '',
       body: '',
       signature: ''
     })
+    debugger;
+    if(this.state.body.length && member) {
+
     history.push('/ContactPdf')
+    } else {
+      alert('Please enter a message')
+      this.setState({
+        error: true
+      })
+    }
   }
 
   render () {
@@ -61,7 +71,7 @@ export class ContactForm extends Component {
               placeholder='Enter your Signature'
               type='text'
             /> 
-            <button>Submit your Message</button>     
+            <button>Submit your Message</button>    
         </form>
     )
   }

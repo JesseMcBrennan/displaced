@@ -1,0 +1,3329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Search />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <section
+          className="search-header"
+/>,
+        <form
+          className="search-form"
+          onSubmit={[Function]}
+>
+          <select
+                    name="chamber"
+                    onChange={[Function]}
+          >
+                    <option
+                              type="dropdown"
+                              value=""
+                    >
+                              Pick a Chamber
+                    </option>
+                    <option
+                              type="dropdown"
+                              value="senate"
+                    >
+                              Senate
+                    </option>
+                    <option
+                              type="dropdown"
+                              value="house"
+                    >
+                              House
+                    </option>
+          </select>
+          <select
+                    name="state"
+                    onChange={[Function]}
+          >
+                    <option
+                              value=""
+                    >
+                              Pick a State
+                    </option>
+                    <option
+                              value="AL"
+                    >
+                              Alabama
+                    </option>
+                    <option
+                              value="AK"
+                    >
+                              Alaska
+                    </option>
+                    <option
+                              value="AZ"
+                    >
+                              Arizona
+                    </option>
+                    <option
+                              value="AR"
+                    >
+                              Arkansas
+                    </option>
+                    <option
+                              value="CA"
+                    >
+                              California
+                    </option>
+                    <option
+                              value="CO"
+                    >
+                              Colorado
+                    </option>
+                    <option
+                              value="CT"
+                    >
+                              Connecticut
+                    </option>
+                    <option
+                              value="DE"
+                    >
+                              Delaware
+                    </option>
+                    <option
+                              value="DC"
+                    >
+                              District Of Columbia
+                    </option>
+                    <option
+                              value="FL"
+                    >
+                              Florida
+                    </option>
+                    <option
+                              value="GA"
+                    >
+                              Georgia
+                    </option>
+                    <option
+                              value="HI"
+                    >
+                              Hawaii
+                    </option>
+                    <option
+                              value="ID"
+                    >
+                              Idaho
+                    </option>
+                    <option
+                              value="IL"
+                    >
+                              Illinois
+                    </option>
+                    <option
+                              value="IN"
+                    >
+                              Indiana
+                    </option>
+                    <option
+                              value="IA"
+                    >
+                              Iowa
+                    </option>
+                    <option
+                              value="KS"
+                    >
+                              Kansas
+                    </option>
+                    <option
+                              value="KY"
+                    >
+                              Kentucky
+                    </option>
+                    <option
+                              value="LA"
+                    >
+                              Louisiana
+                    </option>
+                    <option
+                              value="ME"
+                    >
+                              Maine
+                    </option>
+                    <option
+                              value="MD"
+                    >
+                              Maryland
+                    </option>
+                    <option
+                              value="MA"
+                    >
+                              Massachusetts
+                    </option>
+                    <option
+                              value="MI"
+                    >
+                              Michigan
+                    </option>
+                    <option
+                              value="MN"
+                    >
+                              Minnesota
+                    </option>
+                    <option
+                              value="MS"
+                    >
+                              Mississippi
+                    </option>
+                    <option
+                              value="MO"
+                    >
+                              Missouri
+                    </option>
+                    <option
+                              value="MT"
+                    >
+                              Montana
+                    </option>
+                    <option
+                              value="NE"
+                    >
+                              Nebraska
+                    </option>
+                    <option
+                              value="NV"
+                    >
+                              Nevada
+                    </option>
+                    <option
+                              value="NH"
+                    >
+                              New Hampshire
+                    </option>
+                    <option
+                              value="NJ"
+                    >
+                              New Jersey
+                    </option>
+                    <option
+                              value="NM"
+                    >
+                              New Mexico
+                    </option>
+                    <option
+                              value="NY"
+                    >
+                              New York
+                    </option>
+                    <option
+                              value="NC"
+                    >
+                              North Carolina
+                    </option>
+                    <option
+                              value="ND"
+                    >
+                              North Dakota
+                    </option>
+                    <option
+                              value="OH"
+                    >
+                              Ohio
+                    </option>
+                    <option
+                              value="OK"
+                    >
+                              Oklahoma
+                    </option>
+                    <option
+                              value="OR"
+                    >
+                              Oregon
+                    </option>
+                    <option
+                              value="PA"
+                    >
+                              Pennsylvania
+                    </option>
+                    <option
+                              value="RI"
+                    >
+                              Rhode Island
+                    </option>
+                    <option
+                              value="SC"
+                    >
+                              South Carolina
+                    </option>
+                    <option
+                              value="SD"
+                    >
+                              South Dakota
+                    </option>
+                    <option
+                              value="TN"
+                    >
+                              Tennessee
+                    </option>
+                    <option
+                              value="TX"
+                    >
+                              Texas
+                    </option>
+                    <option
+                              value="UT"
+                    >
+                              Utah
+                    </option>
+                    <option
+                              value="VT"
+                    >
+                              Vermont
+                    </option>
+                    <option
+                              value="VA"
+                    >
+                              Virginia
+                    </option>
+                    <option
+                              value="WA"
+                    >
+                              Washington
+                    </option>
+                    <option
+                              value="WV"
+                    >
+                              West Virginia
+                    </option>
+                    <option
+                              value="WI"
+                    >
+                              Wisconsin
+                    </option>
+                    <option
+                              value="WY"
+                    >
+                              Wyoming
+                    </option>
+          </select>
+          <input
+                    name="zipcode"
+                    onChange={[Function]}
+                    placeholder="Zipcode"
+                    type="number"
+                    value=""
+          />
+          <button
+                    className="submitButton"
+          >
+                    Submit
+          </button>
+</form>,
+      ],
+      "className": "search-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "search-header",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <select
+              name="chamber"
+              onChange={[Function]}
+>
+              <option
+                            type="dropdown"
+                            value=""
+              >
+                            Pick a Chamber
+              </option>
+              <option
+                            type="dropdown"
+                            value="senate"
+              >
+                            Senate
+              </option>
+              <option
+                            type="dropdown"
+                            value="house"
+              >
+                            House
+              </option>
+</select>,
+            <select
+              name="state"
+              onChange={[Function]}
+>
+              <option
+                            value=""
+              >
+                            Pick a State
+              </option>
+              <option
+                            value="AL"
+              >
+                            Alabama
+              </option>
+              <option
+                            value="AK"
+              >
+                            Alaska
+              </option>
+              <option
+                            value="AZ"
+              >
+                            Arizona
+              </option>
+              <option
+                            value="AR"
+              >
+                            Arkansas
+              </option>
+              <option
+                            value="CA"
+              >
+                            California
+              </option>
+              <option
+                            value="CO"
+              >
+                            Colorado
+              </option>
+              <option
+                            value="CT"
+              >
+                            Connecticut
+              </option>
+              <option
+                            value="DE"
+              >
+                            Delaware
+              </option>
+              <option
+                            value="DC"
+              >
+                            District Of Columbia
+              </option>
+              <option
+                            value="FL"
+              >
+                            Florida
+              </option>
+              <option
+                            value="GA"
+              >
+                            Georgia
+              </option>
+              <option
+                            value="HI"
+              >
+                            Hawaii
+              </option>
+              <option
+                            value="ID"
+              >
+                            Idaho
+              </option>
+              <option
+                            value="IL"
+              >
+                            Illinois
+              </option>
+              <option
+                            value="IN"
+              >
+                            Indiana
+              </option>
+              <option
+                            value="IA"
+              >
+                            Iowa
+              </option>
+              <option
+                            value="KS"
+              >
+                            Kansas
+              </option>
+              <option
+                            value="KY"
+              >
+                            Kentucky
+              </option>
+              <option
+                            value="LA"
+              >
+                            Louisiana
+              </option>
+              <option
+                            value="ME"
+              >
+                            Maine
+              </option>
+              <option
+                            value="MD"
+              >
+                            Maryland
+              </option>
+              <option
+                            value="MA"
+              >
+                            Massachusetts
+              </option>
+              <option
+                            value="MI"
+              >
+                            Michigan
+              </option>
+              <option
+                            value="MN"
+              >
+                            Minnesota
+              </option>
+              <option
+                            value="MS"
+              >
+                            Mississippi
+              </option>
+              <option
+                            value="MO"
+              >
+                            Missouri
+              </option>
+              <option
+                            value="MT"
+              >
+                            Montana
+              </option>
+              <option
+                            value="NE"
+              >
+                            Nebraska
+              </option>
+              <option
+                            value="NV"
+              >
+                            Nevada
+              </option>
+              <option
+                            value="NH"
+              >
+                            New Hampshire
+              </option>
+              <option
+                            value="NJ"
+              >
+                            New Jersey
+              </option>
+              <option
+                            value="NM"
+              >
+                            New Mexico
+              </option>
+              <option
+                            value="NY"
+              >
+                            New York
+              </option>
+              <option
+                            value="NC"
+              >
+                            North Carolina
+              </option>
+              <option
+                            value="ND"
+              >
+                            North Dakota
+              </option>
+              <option
+                            value="OH"
+              >
+                            Ohio
+              </option>
+              <option
+                            value="OK"
+              >
+                            Oklahoma
+              </option>
+              <option
+                            value="OR"
+              >
+                            Oregon
+              </option>
+              <option
+                            value="PA"
+              >
+                            Pennsylvania
+              </option>
+              <option
+                            value="RI"
+              >
+                            Rhode Island
+              </option>
+              <option
+                            value="SC"
+              >
+                            South Carolina
+              </option>
+              <option
+                            value="SD"
+              >
+                            South Dakota
+              </option>
+              <option
+                            value="TN"
+              >
+                            Tennessee
+              </option>
+              <option
+                            value="TX"
+              >
+                            Texas
+              </option>
+              <option
+                            value="UT"
+              >
+                            Utah
+              </option>
+              <option
+                            value="VT"
+              >
+                            Vermont
+              </option>
+              <option
+                            value="VA"
+              >
+                            Virginia
+              </option>
+              <option
+                            value="WA"
+              >
+                            Washington
+              </option>
+              <option
+                            value="WV"
+              >
+                            West Virginia
+              </option>
+              <option
+                            value="WI"
+              >
+                            Wisconsin
+              </option>
+              <option
+                            value="WY"
+              >
+                            Wyoming
+              </option>
+</select>,
+            <input
+              name="zipcode"
+              onChange={[Function]}
+              placeholder="Zipcode"
+              type="number"
+              value=""
+/>,
+            <button
+              className="submitButton"
+>
+              Submit
+</button>,
+          ],
+          "className": "search-form",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  type="dropdown"
+                  value=""
+>
+                  Pick a Chamber
+</option>,
+                <option
+                  type="dropdown"
+                  value="senate"
+>
+                  Senate
+</option>,
+                <option
+                  type="dropdown"
+                  value="house"
+>
+                  House
+</option>,
+              ],
+              "name": "chamber",
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Pick a Chamber",
+                  "type": "dropdown",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": "Pick a Chamber",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Senate",
+                  "type": "dropdown",
+                  "value": "senate",
+                },
+                "ref": null,
+                "rendered": "Senate",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "House",
+                  "type": "dropdown",
+                  "value": "house",
+                },
+                "ref": null,
+                "rendered": "House",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  value=""
+>
+                  Pick a State
+</option>,
+                <option
+                  value="AL"
+>
+                  Alabama
+</option>,
+                <option
+                  value="AK"
+>
+                  Alaska
+</option>,
+                <option
+                  value="AZ"
+>
+                  Arizona
+</option>,
+                <option
+                  value="AR"
+>
+                  Arkansas
+</option>,
+                <option
+                  value="CA"
+>
+                  California
+</option>,
+                <option
+                  value="CO"
+>
+                  Colorado
+</option>,
+                <option
+                  value="CT"
+>
+                  Connecticut
+</option>,
+                <option
+                  value="DE"
+>
+                  Delaware
+</option>,
+                <option
+                  value="DC"
+>
+                  District Of Columbia
+</option>,
+                <option
+                  value="FL"
+>
+                  Florida
+</option>,
+                <option
+                  value="GA"
+>
+                  Georgia
+</option>,
+                <option
+                  value="HI"
+>
+                  Hawaii
+</option>,
+                <option
+                  value="ID"
+>
+                  Idaho
+</option>,
+                <option
+                  value="IL"
+>
+                  Illinois
+</option>,
+                <option
+                  value="IN"
+>
+                  Indiana
+</option>,
+                <option
+                  value="IA"
+>
+                  Iowa
+</option>,
+                <option
+                  value="KS"
+>
+                  Kansas
+</option>,
+                <option
+                  value="KY"
+>
+                  Kentucky
+</option>,
+                <option
+                  value="LA"
+>
+                  Louisiana
+</option>,
+                <option
+                  value="ME"
+>
+                  Maine
+</option>,
+                <option
+                  value="MD"
+>
+                  Maryland
+</option>,
+                <option
+                  value="MA"
+>
+                  Massachusetts
+</option>,
+                <option
+                  value="MI"
+>
+                  Michigan
+</option>,
+                <option
+                  value="MN"
+>
+                  Minnesota
+</option>,
+                <option
+                  value="MS"
+>
+                  Mississippi
+</option>,
+                <option
+                  value="MO"
+>
+                  Missouri
+</option>,
+                <option
+                  value="MT"
+>
+                  Montana
+</option>,
+                <option
+                  value="NE"
+>
+                  Nebraska
+</option>,
+                <option
+                  value="NV"
+>
+                  Nevada
+</option>,
+                <option
+                  value="NH"
+>
+                  New Hampshire
+</option>,
+                <option
+                  value="NJ"
+>
+                  New Jersey
+</option>,
+                <option
+                  value="NM"
+>
+                  New Mexico
+</option>,
+                <option
+                  value="NY"
+>
+                  New York
+</option>,
+                <option
+                  value="NC"
+>
+                  North Carolina
+</option>,
+                <option
+                  value="ND"
+>
+                  North Dakota
+</option>,
+                <option
+                  value="OH"
+>
+                  Ohio
+</option>,
+                <option
+                  value="OK"
+>
+                  Oklahoma
+</option>,
+                <option
+                  value="OR"
+>
+                  Oregon
+</option>,
+                <option
+                  value="PA"
+>
+                  Pennsylvania
+</option>,
+                <option
+                  value="RI"
+>
+                  Rhode Island
+</option>,
+                <option
+                  value="SC"
+>
+                  South Carolina
+</option>,
+                <option
+                  value="SD"
+>
+                  South Dakota
+</option>,
+                <option
+                  value="TN"
+>
+                  Tennessee
+</option>,
+                <option
+                  value="TX"
+>
+                  Texas
+</option>,
+                <option
+                  value="UT"
+>
+                  Utah
+</option>,
+                <option
+                  value="VT"
+>
+                  Vermont
+</option>,
+                <option
+                  value="VA"
+>
+                  Virginia
+</option>,
+                <option
+                  value="WA"
+>
+                  Washington
+</option>,
+                <option
+                  value="WV"
+>
+                  West Virginia
+</option>,
+                <option
+                  value="WI"
+>
+                  Wisconsin
+</option>,
+                <option
+                  value="WY"
+>
+                  Wyoming
+</option>,
+              ],
+              "name": "state",
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Pick a State",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": "Pick a State",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Alabama",
+                  "value": "AL",
+                },
+                "ref": null,
+                "rendered": "Alabama",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Alaska",
+                  "value": "AK",
+                },
+                "ref": null,
+                "rendered": "Alaska",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Arizona",
+                  "value": "AZ",
+                },
+                "ref": null,
+                "rendered": "Arizona",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Arkansas",
+                  "value": "AR",
+                },
+                "ref": null,
+                "rendered": "Arkansas",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "California",
+                  "value": "CA",
+                },
+                "ref": null,
+                "rendered": "California",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Colorado",
+                  "value": "CO",
+                },
+                "ref": null,
+                "rendered": "Colorado",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Connecticut",
+                  "value": "CT",
+                },
+                "ref": null,
+                "rendered": "Connecticut",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Delaware",
+                  "value": "DE",
+                },
+                "ref": null,
+                "rendered": "Delaware",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "District Of Columbia",
+                  "value": "DC",
+                },
+                "ref": null,
+                "rendered": "District Of Columbia",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Florida",
+                  "value": "FL",
+                },
+                "ref": null,
+                "rendered": "Florida",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Georgia",
+                  "value": "GA",
+                },
+                "ref": null,
+                "rendered": "Georgia",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Hawaii",
+                  "value": "HI",
+                },
+                "ref": null,
+                "rendered": "Hawaii",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Idaho",
+                  "value": "ID",
+                },
+                "ref": null,
+                "rendered": "Idaho",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Illinois",
+                  "value": "IL",
+                },
+                "ref": null,
+                "rendered": "Illinois",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Indiana",
+                  "value": "IN",
+                },
+                "ref": null,
+                "rendered": "Indiana",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Iowa",
+                  "value": "IA",
+                },
+                "ref": null,
+                "rendered": "Iowa",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Kansas",
+                  "value": "KS",
+                },
+                "ref": null,
+                "rendered": "Kansas",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Kentucky",
+                  "value": "KY",
+                },
+                "ref": null,
+                "rendered": "Kentucky",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Louisiana",
+                  "value": "LA",
+                },
+                "ref": null,
+                "rendered": "Louisiana",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Maine",
+                  "value": "ME",
+                },
+                "ref": null,
+                "rendered": "Maine",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Maryland",
+                  "value": "MD",
+                },
+                "ref": null,
+                "rendered": "Maryland",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Massachusetts",
+                  "value": "MA",
+                },
+                "ref": null,
+                "rendered": "Massachusetts",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Michigan",
+                  "value": "MI",
+                },
+                "ref": null,
+                "rendered": "Michigan",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Minnesota",
+                  "value": "MN",
+                },
+                "ref": null,
+                "rendered": "Minnesota",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mississippi",
+                  "value": "MS",
+                },
+                "ref": null,
+                "rendered": "Mississippi",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Missouri",
+                  "value": "MO",
+                },
+                "ref": null,
+                "rendered": "Missouri",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Montana",
+                  "value": "MT",
+                },
+                "ref": null,
+                "rendered": "Montana",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Nebraska",
+                  "value": "NE",
+                },
+                "ref": null,
+                "rendered": "Nebraska",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Nevada",
+                  "value": "NV",
+                },
+                "ref": null,
+                "rendered": "Nevada",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "New Hampshire",
+                  "value": "NH",
+                },
+                "ref": null,
+                "rendered": "New Hampshire",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "New Jersey",
+                  "value": "NJ",
+                },
+                "ref": null,
+                "rendered": "New Jersey",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "New Mexico",
+                  "value": "NM",
+                },
+                "ref": null,
+                "rendered": "New Mexico",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "New York",
+                  "value": "NY",
+                },
+                "ref": null,
+                "rendered": "New York",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "North Carolina",
+                  "value": "NC",
+                },
+                "ref": null,
+                "rendered": "North Carolina",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "North Dakota",
+                  "value": "ND",
+                },
+                "ref": null,
+                "rendered": "North Dakota",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Ohio",
+                  "value": "OH",
+                },
+                "ref": null,
+                "rendered": "Ohio",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Oklahoma",
+                  "value": "OK",
+                },
+                "ref": null,
+                "rendered": "Oklahoma",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Oregon",
+                  "value": "OR",
+                },
+                "ref": null,
+                "rendered": "Oregon",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Pennsylvania",
+                  "value": "PA",
+                },
+                "ref": null,
+                "rendered": "Pennsylvania",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Rhode Island",
+                  "value": "RI",
+                },
+                "ref": null,
+                "rendered": "Rhode Island",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "South Carolina",
+                  "value": "SC",
+                },
+                "ref": null,
+                "rendered": "South Carolina",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "South Dakota",
+                  "value": "SD",
+                },
+                "ref": null,
+                "rendered": "South Dakota",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Tennessee",
+                  "value": "TN",
+                },
+                "ref": null,
+                "rendered": "Tennessee",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Texas",
+                  "value": "TX",
+                },
+                "ref": null,
+                "rendered": "Texas",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Utah",
+                  "value": "UT",
+                },
+                "ref": null,
+                "rendered": "Utah",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Vermont",
+                  "value": "VT",
+                },
+                "ref": null,
+                "rendered": "Vermont",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Virginia",
+                  "value": "VA",
+                },
+                "ref": null,
+                "rendered": "Virginia",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Washington",
+                  "value": "WA",
+                },
+                "ref": null,
+                "rendered": "Washington",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "West Virginia",
+                  "value": "WV",
+                },
+                "ref": null,
+                "rendered": "West Virginia",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Wisconsin",
+                  "value": "WI",
+                },
+                "ref": null,
+                "rendered": "Wisconsin",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Wyoming",
+                  "value": "WY",
+                },
+                "ref": null,
+                "rendered": "Wyoming",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "zipcode",
+              "onChange": [Function],
+              "placeholder": "Zipcode",
+              "type": "number",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Submit",
+              "className": "submitButton",
+            },
+            "ref": null,
+            "rendered": "Submit",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <section
+            className="search-header"
+/>,
+          <form
+            className="search-form"
+            onSubmit={[Function]}
+>
+            <select
+                        name="chamber"
+                        onChange={[Function]}
+            >
+                        <option
+                                    type="dropdown"
+                                    value=""
+                        >
+                                    Pick a Chamber
+                        </option>
+                        <option
+                                    type="dropdown"
+                                    value="senate"
+                        >
+                                    Senate
+                        </option>
+                        <option
+                                    type="dropdown"
+                                    value="house"
+                        >
+                                    House
+                        </option>
+            </select>
+            <select
+                        name="state"
+                        onChange={[Function]}
+            >
+                        <option
+                                    value=""
+                        >
+                                    Pick a State
+                        </option>
+                        <option
+                                    value="AL"
+                        >
+                                    Alabama
+                        </option>
+                        <option
+                                    value="AK"
+                        >
+                                    Alaska
+                        </option>
+                        <option
+                                    value="AZ"
+                        >
+                                    Arizona
+                        </option>
+                        <option
+                                    value="AR"
+                        >
+                                    Arkansas
+                        </option>
+                        <option
+                                    value="CA"
+                        >
+                                    California
+                        </option>
+                        <option
+                                    value="CO"
+                        >
+                                    Colorado
+                        </option>
+                        <option
+                                    value="CT"
+                        >
+                                    Connecticut
+                        </option>
+                        <option
+                                    value="DE"
+                        >
+                                    Delaware
+                        </option>
+                        <option
+                                    value="DC"
+                        >
+                                    District Of Columbia
+                        </option>
+                        <option
+                                    value="FL"
+                        >
+                                    Florida
+                        </option>
+                        <option
+                                    value="GA"
+                        >
+                                    Georgia
+                        </option>
+                        <option
+                                    value="HI"
+                        >
+                                    Hawaii
+                        </option>
+                        <option
+                                    value="ID"
+                        >
+                                    Idaho
+                        </option>
+                        <option
+                                    value="IL"
+                        >
+                                    Illinois
+                        </option>
+                        <option
+                                    value="IN"
+                        >
+                                    Indiana
+                        </option>
+                        <option
+                                    value="IA"
+                        >
+                                    Iowa
+                        </option>
+                        <option
+                                    value="KS"
+                        >
+                                    Kansas
+                        </option>
+                        <option
+                                    value="KY"
+                        >
+                                    Kentucky
+                        </option>
+                        <option
+                                    value="LA"
+                        >
+                                    Louisiana
+                        </option>
+                        <option
+                                    value="ME"
+                        >
+                                    Maine
+                        </option>
+                        <option
+                                    value="MD"
+                        >
+                                    Maryland
+                        </option>
+                        <option
+                                    value="MA"
+                        >
+                                    Massachusetts
+                        </option>
+                        <option
+                                    value="MI"
+                        >
+                                    Michigan
+                        </option>
+                        <option
+                                    value="MN"
+                        >
+                                    Minnesota
+                        </option>
+                        <option
+                                    value="MS"
+                        >
+                                    Mississippi
+                        </option>
+                        <option
+                                    value="MO"
+                        >
+                                    Missouri
+                        </option>
+                        <option
+                                    value="MT"
+                        >
+                                    Montana
+                        </option>
+                        <option
+                                    value="NE"
+                        >
+                                    Nebraska
+                        </option>
+                        <option
+                                    value="NV"
+                        >
+                                    Nevada
+                        </option>
+                        <option
+                                    value="NH"
+                        >
+                                    New Hampshire
+                        </option>
+                        <option
+                                    value="NJ"
+                        >
+                                    New Jersey
+                        </option>
+                        <option
+                                    value="NM"
+                        >
+                                    New Mexico
+                        </option>
+                        <option
+                                    value="NY"
+                        >
+                                    New York
+                        </option>
+                        <option
+                                    value="NC"
+                        >
+                                    North Carolina
+                        </option>
+                        <option
+                                    value="ND"
+                        >
+                                    North Dakota
+                        </option>
+                        <option
+                                    value="OH"
+                        >
+                                    Ohio
+                        </option>
+                        <option
+                                    value="OK"
+                        >
+                                    Oklahoma
+                        </option>
+                        <option
+                                    value="OR"
+                        >
+                                    Oregon
+                        </option>
+                        <option
+                                    value="PA"
+                        >
+                                    Pennsylvania
+                        </option>
+                        <option
+                                    value="RI"
+                        >
+                                    Rhode Island
+                        </option>
+                        <option
+                                    value="SC"
+                        >
+                                    South Carolina
+                        </option>
+                        <option
+                                    value="SD"
+                        >
+                                    South Dakota
+                        </option>
+                        <option
+                                    value="TN"
+                        >
+                                    Tennessee
+                        </option>
+                        <option
+                                    value="TX"
+                        >
+                                    Texas
+                        </option>
+                        <option
+                                    value="UT"
+                        >
+                                    Utah
+                        </option>
+                        <option
+                                    value="VT"
+                        >
+                                    Vermont
+                        </option>
+                        <option
+                                    value="VA"
+                        >
+                                    Virginia
+                        </option>
+                        <option
+                                    value="WA"
+                        >
+                                    Washington
+                        </option>
+                        <option
+                                    value="WV"
+                        >
+                                    West Virginia
+                        </option>
+                        <option
+                                    value="WI"
+                        >
+                                    Wisconsin
+                        </option>
+                        <option
+                                    value="WY"
+                        >
+                                    Wyoming
+                        </option>
+            </select>
+            <input
+                        name="zipcode"
+                        onChange={[Function]}
+                        placeholder="Zipcode"
+                        type="number"
+                        value=""
+            />
+            <button
+                        className="submitButton"
+            >
+                        Submit
+            </button>
+</form>,
+        ],
+        "className": "search-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "search-header",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <select
+                name="chamber"
+                onChange={[Function]}
+>
+                <option
+                                type="dropdown"
+                                value=""
+                >
+                                Pick a Chamber
+                </option>
+                <option
+                                type="dropdown"
+                                value="senate"
+                >
+                                Senate
+                </option>
+                <option
+                                type="dropdown"
+                                value="house"
+                >
+                                House
+                </option>
+</select>,
+              <select
+                name="state"
+                onChange={[Function]}
+>
+                <option
+                                value=""
+                >
+                                Pick a State
+                </option>
+                <option
+                                value="AL"
+                >
+                                Alabama
+                </option>
+                <option
+                                value="AK"
+                >
+                                Alaska
+                </option>
+                <option
+                                value="AZ"
+                >
+                                Arizona
+                </option>
+                <option
+                                value="AR"
+                >
+                                Arkansas
+                </option>
+                <option
+                                value="CA"
+                >
+                                California
+                </option>
+                <option
+                                value="CO"
+                >
+                                Colorado
+                </option>
+                <option
+                                value="CT"
+                >
+                                Connecticut
+                </option>
+                <option
+                                value="DE"
+                >
+                                Delaware
+                </option>
+                <option
+                                value="DC"
+                >
+                                District Of Columbia
+                </option>
+                <option
+                                value="FL"
+                >
+                                Florida
+                </option>
+                <option
+                                value="GA"
+                >
+                                Georgia
+                </option>
+                <option
+                                value="HI"
+                >
+                                Hawaii
+                </option>
+                <option
+                                value="ID"
+                >
+                                Idaho
+                </option>
+                <option
+                                value="IL"
+                >
+                                Illinois
+                </option>
+                <option
+                                value="IN"
+                >
+                                Indiana
+                </option>
+                <option
+                                value="IA"
+                >
+                                Iowa
+                </option>
+                <option
+                                value="KS"
+                >
+                                Kansas
+                </option>
+                <option
+                                value="KY"
+                >
+                                Kentucky
+                </option>
+                <option
+                                value="LA"
+                >
+                                Louisiana
+                </option>
+                <option
+                                value="ME"
+                >
+                                Maine
+                </option>
+                <option
+                                value="MD"
+                >
+                                Maryland
+                </option>
+                <option
+                                value="MA"
+                >
+                                Massachusetts
+                </option>
+                <option
+                                value="MI"
+                >
+                                Michigan
+                </option>
+                <option
+                                value="MN"
+                >
+                                Minnesota
+                </option>
+                <option
+                                value="MS"
+                >
+                                Mississippi
+                </option>
+                <option
+                                value="MO"
+                >
+                                Missouri
+                </option>
+                <option
+                                value="MT"
+                >
+                                Montana
+                </option>
+                <option
+                                value="NE"
+                >
+                                Nebraska
+                </option>
+                <option
+                                value="NV"
+                >
+                                Nevada
+                </option>
+                <option
+                                value="NH"
+                >
+                                New Hampshire
+                </option>
+                <option
+                                value="NJ"
+                >
+                                New Jersey
+                </option>
+                <option
+                                value="NM"
+                >
+                                New Mexico
+                </option>
+                <option
+                                value="NY"
+                >
+                                New York
+                </option>
+                <option
+                                value="NC"
+                >
+                                North Carolina
+                </option>
+                <option
+                                value="ND"
+                >
+                                North Dakota
+                </option>
+                <option
+                                value="OH"
+                >
+                                Ohio
+                </option>
+                <option
+                                value="OK"
+                >
+                                Oklahoma
+                </option>
+                <option
+                                value="OR"
+                >
+                                Oregon
+                </option>
+                <option
+                                value="PA"
+                >
+                                Pennsylvania
+                </option>
+                <option
+                                value="RI"
+                >
+                                Rhode Island
+                </option>
+                <option
+                                value="SC"
+                >
+                                South Carolina
+                </option>
+                <option
+                                value="SD"
+                >
+                                South Dakota
+                </option>
+                <option
+                                value="TN"
+                >
+                                Tennessee
+                </option>
+                <option
+                                value="TX"
+                >
+                                Texas
+                </option>
+                <option
+                                value="UT"
+                >
+                                Utah
+                </option>
+                <option
+                                value="VT"
+                >
+                                Vermont
+                </option>
+                <option
+                                value="VA"
+                >
+                                Virginia
+                </option>
+                <option
+                                value="WA"
+                >
+                                Washington
+                </option>
+                <option
+                                value="WV"
+                >
+                                West Virginia
+                </option>
+                <option
+                                value="WI"
+                >
+                                Wisconsin
+                </option>
+                <option
+                                value="WY"
+                >
+                                Wyoming
+                </option>
+</select>,
+              <input
+                name="zipcode"
+                onChange={[Function]}
+                placeholder="Zipcode"
+                type="number"
+                value=""
+/>,
+              <button
+                className="submitButton"
+>
+                Submit
+</button>,
+            ],
+            "className": "search-form",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    type="dropdown"
+                    value=""
+>
+                    Pick a Chamber
+</option>,
+                  <option
+                    type="dropdown"
+                    value="senate"
+>
+                    Senate
+</option>,
+                  <option
+                    type="dropdown"
+                    value="house"
+>
+                    House
+</option>,
+                ],
+                "name": "chamber",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Pick a Chamber",
+                    "type": "dropdown",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": "Pick a Chamber",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Senate",
+                    "type": "dropdown",
+                    "value": "senate",
+                  },
+                  "ref": null,
+                  "rendered": "Senate",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "House",
+                    "type": "dropdown",
+                    "value": "house",
+                  },
+                  "ref": null,
+                  "rendered": "House",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value=""
+>
+                    Pick a State
+</option>,
+                  <option
+                    value="AL"
+>
+                    Alabama
+</option>,
+                  <option
+                    value="AK"
+>
+                    Alaska
+</option>,
+                  <option
+                    value="AZ"
+>
+                    Arizona
+</option>,
+                  <option
+                    value="AR"
+>
+                    Arkansas
+</option>,
+                  <option
+                    value="CA"
+>
+                    California
+</option>,
+                  <option
+                    value="CO"
+>
+                    Colorado
+</option>,
+                  <option
+                    value="CT"
+>
+                    Connecticut
+</option>,
+                  <option
+                    value="DE"
+>
+                    Delaware
+</option>,
+                  <option
+                    value="DC"
+>
+                    District Of Columbia
+</option>,
+                  <option
+                    value="FL"
+>
+                    Florida
+</option>,
+                  <option
+                    value="GA"
+>
+                    Georgia
+</option>,
+                  <option
+                    value="HI"
+>
+                    Hawaii
+</option>,
+                  <option
+                    value="ID"
+>
+                    Idaho
+</option>,
+                  <option
+                    value="IL"
+>
+                    Illinois
+</option>,
+                  <option
+                    value="IN"
+>
+                    Indiana
+</option>,
+                  <option
+                    value="IA"
+>
+                    Iowa
+</option>,
+                  <option
+                    value="KS"
+>
+                    Kansas
+</option>,
+                  <option
+                    value="KY"
+>
+                    Kentucky
+</option>,
+                  <option
+                    value="LA"
+>
+                    Louisiana
+</option>,
+                  <option
+                    value="ME"
+>
+                    Maine
+</option>,
+                  <option
+                    value="MD"
+>
+                    Maryland
+</option>,
+                  <option
+                    value="MA"
+>
+                    Massachusetts
+</option>,
+                  <option
+                    value="MI"
+>
+                    Michigan
+</option>,
+                  <option
+                    value="MN"
+>
+                    Minnesota
+</option>,
+                  <option
+                    value="MS"
+>
+                    Mississippi
+</option>,
+                  <option
+                    value="MO"
+>
+                    Missouri
+</option>,
+                  <option
+                    value="MT"
+>
+                    Montana
+</option>,
+                  <option
+                    value="NE"
+>
+                    Nebraska
+</option>,
+                  <option
+                    value="NV"
+>
+                    Nevada
+</option>,
+                  <option
+                    value="NH"
+>
+                    New Hampshire
+</option>,
+                  <option
+                    value="NJ"
+>
+                    New Jersey
+</option>,
+                  <option
+                    value="NM"
+>
+                    New Mexico
+</option>,
+                  <option
+                    value="NY"
+>
+                    New York
+</option>,
+                  <option
+                    value="NC"
+>
+                    North Carolina
+</option>,
+                  <option
+                    value="ND"
+>
+                    North Dakota
+</option>,
+                  <option
+                    value="OH"
+>
+                    Ohio
+</option>,
+                  <option
+                    value="OK"
+>
+                    Oklahoma
+</option>,
+                  <option
+                    value="OR"
+>
+                    Oregon
+</option>,
+                  <option
+                    value="PA"
+>
+                    Pennsylvania
+</option>,
+                  <option
+                    value="RI"
+>
+                    Rhode Island
+</option>,
+                  <option
+                    value="SC"
+>
+                    South Carolina
+</option>,
+                  <option
+                    value="SD"
+>
+                    South Dakota
+</option>,
+                  <option
+                    value="TN"
+>
+                    Tennessee
+</option>,
+                  <option
+                    value="TX"
+>
+                    Texas
+</option>,
+                  <option
+                    value="UT"
+>
+                    Utah
+</option>,
+                  <option
+                    value="VT"
+>
+                    Vermont
+</option>,
+                  <option
+                    value="VA"
+>
+                    Virginia
+</option>,
+                  <option
+                    value="WA"
+>
+                    Washington
+</option>,
+                  <option
+                    value="WV"
+>
+                    West Virginia
+</option>,
+                  <option
+                    value="WI"
+>
+                    Wisconsin
+</option>,
+                  <option
+                    value="WY"
+>
+                    Wyoming
+</option>,
+                ],
+                "name": "state",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Pick a State",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": "Pick a State",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Alabama",
+                    "value": "AL",
+                  },
+                  "ref": null,
+                  "rendered": "Alabama",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Alaska",
+                    "value": "AK",
+                  },
+                  "ref": null,
+                  "rendered": "Alaska",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Arizona",
+                    "value": "AZ",
+                  },
+                  "ref": null,
+                  "rendered": "Arizona",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Arkansas",
+                    "value": "AR",
+                  },
+                  "ref": null,
+                  "rendered": "Arkansas",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "California",
+                    "value": "CA",
+                  },
+                  "ref": null,
+                  "rendered": "California",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Colorado",
+                    "value": "CO",
+                  },
+                  "ref": null,
+                  "rendered": "Colorado",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Connecticut",
+                    "value": "CT",
+                  },
+                  "ref": null,
+                  "rendered": "Connecticut",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Delaware",
+                    "value": "DE",
+                  },
+                  "ref": null,
+                  "rendered": "Delaware",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "District Of Columbia",
+                    "value": "DC",
+                  },
+                  "ref": null,
+                  "rendered": "District Of Columbia",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Florida",
+                    "value": "FL",
+                  },
+                  "ref": null,
+                  "rendered": "Florida",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Georgia",
+                    "value": "GA",
+                  },
+                  "ref": null,
+                  "rendered": "Georgia",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Hawaii",
+                    "value": "HI",
+                  },
+                  "ref": null,
+                  "rendered": "Hawaii",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Idaho",
+                    "value": "ID",
+                  },
+                  "ref": null,
+                  "rendered": "Idaho",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Illinois",
+                    "value": "IL",
+                  },
+                  "ref": null,
+                  "rendered": "Illinois",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Indiana",
+                    "value": "IN",
+                  },
+                  "ref": null,
+                  "rendered": "Indiana",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Iowa",
+                    "value": "IA",
+                  },
+                  "ref": null,
+                  "rendered": "Iowa",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Kansas",
+                    "value": "KS",
+                  },
+                  "ref": null,
+                  "rendered": "Kansas",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Kentucky",
+                    "value": "KY",
+                  },
+                  "ref": null,
+                  "rendered": "Kentucky",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Louisiana",
+                    "value": "LA",
+                  },
+                  "ref": null,
+                  "rendered": "Louisiana",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Maine",
+                    "value": "ME",
+                  },
+                  "ref": null,
+                  "rendered": "Maine",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Maryland",
+                    "value": "MD",
+                  },
+                  "ref": null,
+                  "rendered": "Maryland",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Massachusetts",
+                    "value": "MA",
+                  },
+                  "ref": null,
+                  "rendered": "Massachusetts",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Michigan",
+                    "value": "MI",
+                  },
+                  "ref": null,
+                  "rendered": "Michigan",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Minnesota",
+                    "value": "MN",
+                  },
+                  "ref": null,
+                  "rendered": "Minnesota",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mississippi",
+                    "value": "MS",
+                  },
+                  "ref": null,
+                  "rendered": "Mississippi",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Missouri",
+                    "value": "MO",
+                  },
+                  "ref": null,
+                  "rendered": "Missouri",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Montana",
+                    "value": "MT",
+                  },
+                  "ref": null,
+                  "rendered": "Montana",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Nebraska",
+                    "value": "NE",
+                  },
+                  "ref": null,
+                  "rendered": "Nebraska",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Nevada",
+                    "value": "NV",
+                  },
+                  "ref": null,
+                  "rendered": "Nevada",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "New Hampshire",
+                    "value": "NH",
+                  },
+                  "ref": null,
+                  "rendered": "New Hampshire",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "New Jersey",
+                    "value": "NJ",
+                  },
+                  "ref": null,
+                  "rendered": "New Jersey",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "New Mexico",
+                    "value": "NM",
+                  },
+                  "ref": null,
+                  "rendered": "New Mexico",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "New York",
+                    "value": "NY",
+                  },
+                  "ref": null,
+                  "rendered": "New York",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "North Carolina",
+                    "value": "NC",
+                  },
+                  "ref": null,
+                  "rendered": "North Carolina",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "North Dakota",
+                    "value": "ND",
+                  },
+                  "ref": null,
+                  "rendered": "North Dakota",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Ohio",
+                    "value": "OH",
+                  },
+                  "ref": null,
+                  "rendered": "Ohio",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Oklahoma",
+                    "value": "OK",
+                  },
+                  "ref": null,
+                  "rendered": "Oklahoma",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Oregon",
+                    "value": "OR",
+                  },
+                  "ref": null,
+                  "rendered": "Oregon",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Pennsylvania",
+                    "value": "PA",
+                  },
+                  "ref": null,
+                  "rendered": "Pennsylvania",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Rhode Island",
+                    "value": "RI",
+                  },
+                  "ref": null,
+                  "rendered": "Rhode Island",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "South Carolina",
+                    "value": "SC",
+                  },
+                  "ref": null,
+                  "rendered": "South Carolina",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "South Dakota",
+                    "value": "SD",
+                  },
+                  "ref": null,
+                  "rendered": "South Dakota",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Tennessee",
+                    "value": "TN",
+                  },
+                  "ref": null,
+                  "rendered": "Tennessee",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Texas",
+                    "value": "TX",
+                  },
+                  "ref": null,
+                  "rendered": "Texas",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Utah",
+                    "value": "UT",
+                  },
+                  "ref": null,
+                  "rendered": "Utah",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Vermont",
+                    "value": "VT",
+                  },
+                  "ref": null,
+                  "rendered": "Vermont",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Virginia",
+                    "value": "VA",
+                  },
+                  "ref": null,
+                  "rendered": "Virginia",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Washington",
+                    "value": "WA",
+                  },
+                  "ref": null,
+                  "rendered": "Washington",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "West Virginia",
+                    "value": "WV",
+                  },
+                  "ref": null,
+                  "rendered": "West Virginia",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Wisconsin",
+                    "value": "WI",
+                  },
+                  "ref": null,
+                  "rendered": "Wisconsin",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Wyoming",
+                    "value": "WY",
+                  },
+                  "ref": null,
+                  "rendered": "Wyoming",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "zipcode",
+                "onChange": [Function],
+                "placeholder": "Zipcode",
+                "type": "number",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "className": "submitButton",
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

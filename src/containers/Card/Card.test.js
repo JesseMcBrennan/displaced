@@ -2,31 +2,31 @@ import { Card, mapStateToProps, mapDispatchToProps } from './Card';
 import React from 'react';
 import { shallow } from 'enzyme';
 import { setSearch } from '../../actions'
-import { mockMemberData, mockTitle } from '../../utils/mockData/mockMemberData'
+import { mockMemberData } from '../../utils/mockData/mockMemberData'
 
 describe('Card', () => {
   let wrapper;
+  let mockTitle = {title: 'Senator, 2nd Class'}
 
   beforeEach(() => {
     wrapper = shallow(
-      <Card
-        title={mockTitle}
-      />)
+      <Card member={mockTitle}/>)
   })
+
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   })
 })
 
-describe('mapStateToProps', () => {
-  it('should return an object with ')
-  //Setup
-  const mockState = {
-    members:{}
-  }
-  const expected = {}
+// describe('mapStateToProps', () => {
+//   it('should return an object with ')
+//   //Setup
+//   const mockState = {
+//     members:{}
+//   }
+//   const expected = {}
 
-  const mappedProps = mapStateToProps(mockState)
+//   const mappedProps = mapStateToProps(mockState)
 
-  expect(mappedProps).toEqual(expected)
-})
+//   expect(mappedProps).toEqual(expected)
+// })

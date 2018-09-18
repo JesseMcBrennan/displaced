@@ -7,4 +7,10 @@ describe('searchReducer', () => {
     const result = searchReducer(undefined, []);
     expect(result).toEqual(expected)
   })
+  it('should return an object with search results' , () => {
+    const mockResult = []
+    const expected = mockResult
+    const result = searchReducer([], actions.setSearch(mockResult))
+    expect(result).toEqual(expected)
+  })
 })

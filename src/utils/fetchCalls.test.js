@@ -3,8 +3,8 @@ import ReactDom from 'react-dom';
 import { shallow, mount } from 'enzyme';
 import { membersFetch, membersMoreInfo } from './fetchCalls'
 
-describe('membersFetch', () => {
+describe('fetchCalls', () => {
   it('should render without crashing', () => {
-    
+  const response = { status: success}
   })
 })

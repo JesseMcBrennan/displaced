@@ -14,7 +14,6 @@ export const MemberContainer = ({ members, history }) => {
     }
     return (
       <Card
-        {...member}
         member={member}
         key={index}
         history={history}

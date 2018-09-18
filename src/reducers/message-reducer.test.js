@@ -11,6 +11,6 @@ describe('messageReducer', () => {
     const mockResult = []
     const expected = mockResult
     const result = messageReducer([], actions.setMessage(mockResult))
-    expect(result).toEqual(expect)
+    expect(result).toEqual(expected)
   })
 })

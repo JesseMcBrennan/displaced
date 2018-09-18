@@ -4,7 +4,13 @@ import { shallow, mount } from 'enzyme';
 import { NavBar } from './NavBar'
 
 describe('NavBar container', () => {
-  it('should render without crashing', () => {
-    
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(
+      <NavBar />)
+  })
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
   })
 })

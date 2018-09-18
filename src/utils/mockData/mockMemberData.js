@@ -1,4 +1,18 @@
 export const mockMemberData = [
+    {
+      firstName: 'Jeff',
+      lastName: 'Merkley',
+      party: 'D',
+      title: 'Senator, 2nd Class',
+      office: '313 Hart Senate Office Building',
+      phone: '202-224-3753',
+      voting_percentage: 82.92,
+      memberUrl: 'https://www.merkley.senate.gov',
+      nyt: 'http://topics.nytimes.com/top/reference/timestopics/people/m/jeff_merkley/index.html'
+    }
+  ]
+
+export const mockRawData = [
                 {
                     "congress": "115",
                     "chamber": "House",
