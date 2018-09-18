@@ -9,9 +9,6 @@ import { Card } from '../Card/Card'
 
 export const MemberContainer = ({ members, history }) => {
   const displayMembers = members.map((member, index) => {
-    if(!members.length) {
-      return;
-    }
     return (
       <Card
         member={member}

@@ -36,9 +36,6 @@ ShallowWrapper {
                     Party: 
           </h2>
           <h2>
-                    District: 
-          </h2>
-          <h2>
                     Office: 
                      
           </h2>
@@ -83,9 +80,6 @@ ShallowWrapper {
 </h2>,
             <h2>
               Party: 
-</h2>,
-            <h2>
-              District: 
 </h2>,
             <h2>
               Office: 
@@ -139,23 +133,6 @@ ShallowWrapper {
             "ref": null,
             "rendered": Array [
               "Party: ",
-              undefined,
-            ],
-            "type": "h2",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "District: ",
-                undefined,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "District: ",
               undefined,
             ],
             "type": "h2",
@@ -286,9 +263,6 @@ ShallowWrapper {
                         Party: 
             </h2>
             <h2>
-                        District: 
-            </h2>
-            <h2>
                         Office: 
                          
             </h2>
@@ -333,9 +307,6 @@ ShallowWrapper {
 </h2>,
               <h2>
                 Party: 
-</h2>,
-              <h2>
-                District: 
 </h2>,
               <h2>
                 Office: 
@@ -389,23 +360,6 @@ ShallowWrapper {
               "ref": null,
               "rendered": Array [
                 "Party: ",
-                undefined,
-              ],
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "District: ",
-                  undefined,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                "District: ",
                 undefined,
               ],
               "type": "h2",

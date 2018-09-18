@@ -7,7 +7,6 @@ export const membersCleaner = async (chamber, state, district) => {
     membersData.push({
         firstName: member.first_name,
         lastName: member.last_name,
-        district: member.roles[0].district,
         party: member.roles[0].party,
         title: member.roles[0].title,
         office: member.roles[0].office,

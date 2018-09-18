@@ -33,7 +33,6 @@ export class ContactForm extends Component {
       body: '',
       signature: ''
     })
-    debugger;
     if(this.state.body.length && member) {
 
     history.push('/ContactPdf')

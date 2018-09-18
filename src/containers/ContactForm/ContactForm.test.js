@@ -6,8 +6,10 @@ import { mockMemberData, mockTitle } from '../../utils/mockData/mockMemberData'
 
 describe('ContactForm', () => {
   let wrapper;
+  let mockHistory;
 
   beforeEach(() => {
+    mockHistory = { push: jest.fn ()}
     wrapper = shallow(
       <ContactForm />)
   })
