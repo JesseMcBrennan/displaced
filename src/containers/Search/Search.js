@@ -35,7 +35,7 @@ export class Search extends Component {
 
     const searchResults = await membersCleaner(this.state.chamber, this.state.state, district)
     this.props.setSearch(searchResults)
-    this.props.history.push('/');
+    this.props.history.push('/MemberContainer');
     this.setState({
       zipcode: ''
     })
@@ -150,3 +150,6 @@ export const mapDispatchToProps = dispatch => ({
 
 export default connect(null, mapDispatchToProps)(Search)
 
+Search.propTypes = {
+  setSearch: PropTypes.func
+};

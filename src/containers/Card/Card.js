@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
 import { membersFetch, membersMoreInfo } from '../../utils/fetchCalls.js';
 import './Card.css'
+import PropTypes from 'prop-types';
 
 export class Card extends Component {
   constructor() {
@@ -35,7 +36,7 @@ export class Card extends Component {
           title="Inline Frame Example"
           src={member.nyt}>
       </iframe>
-      <button onClick={this.handleSubmit}>Write your Representative</button>
+      <button className="submit-message" onClick={this.handleSubmit}>Write your Representative</button>
       </div>
     </div>
   )
@@ -49,4 +50,7 @@ export const mapStateToProps = state => ({
 export default withRouter(connect(mapStateToProps)(Card));
 
 
+Card.propTypes = {
+  members: PropTypes.object
+};
 

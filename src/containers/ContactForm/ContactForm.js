@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { NavBar } from '../NavBar/NavBar.js'
 import { setMessage } from '../../actions'
 import './ContactForm.css'
@@ -75,3 +76,9 @@ export const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);
+
+ContactForm.propTypes = {
+  getMovies: PropTypes.array,
+  setMessage: PropTypes.func
+};
+

@@ -1,26 +1,12 @@
-import { Card, mapStateToProps, mapDispatchToProps } from './Card';
+import { ContactForm, mapStateToProps, mapDispatchToProps } from './ContactForm';
 import React from 'react';
 import { shallow } from 'enzyme';
-import { setSearch } from '../../actions'
+import { setMessage } from '../../actions'
 import { mockMemberData, mockTitle } from '../../utils/mockData/mockMemberData'
-
-describe('Card', () => {
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = shallow(
-      <Card
-        title={mockTitle}
-      />)
-  })
-  it('should match the snapshot', () => {
-    expect(wrapper).toMatchSnapshot();
-  })
-})
 
 describe('mapStateToProps', () => {
   it('should return an object with ')
-  //Setup
+
   const mockState = {
     members:{}
   }

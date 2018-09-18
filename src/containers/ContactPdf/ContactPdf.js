@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
   },
   section: {
     margin: 10,
-    padding: 20,
+    padding: 10,
     flexGrow: 1
   }
 });
@@ -32,16 +33,11 @@ export const MyDocument = ({ members, message }) => (
 );
 
 export const ContactPdf = ({members, message}) => {
-  debugger;
-  if(members.length) {
-  return(
+return(
     <div>
       <MyDocument members={members} message={message}/>
     </div>
   )
-  } else {
-    return
-  }
 }
 
 export const mapStateToProps = state => ({
@@ -50,3 +46,8 @@ export const mapStateToProps = state => ({
 })
 
 export default connect(mapStateToProps)(ContactPdf)
+
+ContactPdf.propTypes = {
+  members: PropTypes.object,
+  messag: PropTypes.object
+};

@@ -16,10 +16,9 @@
   border-radius: 8px;
   background-color: rgba(255,255,255);
   font-family: 'Open Sans', sans-serif;
-  padding-top: 1em;
+  padding-top: 0.5em;
   color: rgba(68,68,68);
 }
-
 
 h2 {
   font-size: 0.5em;
@@ -43,9 +42,14 @@ a {
   background-color: rgba(255,255,255);
 }
 
+.submit-message {
+  height: 9em;
+}
+
 .text-container {
   text-align: left;
   height: 100%;
   line-height: .5;
+  padding-top: 0.4em;
 }
 

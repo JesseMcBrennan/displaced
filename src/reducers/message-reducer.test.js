@@ -8,7 +8,7 @@ describe('messageReducer', () => {
     expect(result).toEqual(expected)
   })
   it('should return an object with memberdat', () => {
-    const mockResult = [{}]
+    const mockResult = []
     const expected = mockResult
     const result = messageReducer([], actions.setMessage(mockResult))
     expect(result).toEqual(expect)
