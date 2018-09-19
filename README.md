@@ -1,10 +1,12 @@
-# Replacement
+# Represent
 
 ### By <a href="https://github.com/JesseMcBrennan">Jesse McFadden</a>
 
 ### The Project
 
-Replacement is a visual interface to the ProPublica API. The interface allows a user to interact with the API to search for the congressional representative for the respective user's zip code. It uses the DistrictZip NPM package to pull congressional districts by zip code.
+Represent is a visual interface to the ProPublica API. The interface allows a user to interact with the API to search for the congressional representative for the respective user's zip code. It uses the DistrictZip NPM package to pull congressional districts by zip code.
+
+Represent was built using React, Redux, and Router. The testing suite was built using Jest and Enzyme.
 
 ## User Interaction 
 
