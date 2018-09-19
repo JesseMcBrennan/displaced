@@ -14,3 +14,4 @@ The following page contains basic information about the representative such as t
 
 ### UI
 
+<img src="https://github.com/JesseMcBrennan/represented/blob/master/screencast-localhost-3000-2018.09.18-18-51-36.gif">
