@@ -1,10 +1,31 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import { shallow, mount } from 'enzyme';
-import { App } from './App'
+import { shallow } from 'enzyme';
+import { App, mapStateToProps } from './App';
 
-describe('App container', () => {
-  it('should render without crashing', () => {
-    
-  })
-})
+describe('App', () => {
+  let wrapper;
+  let mockHistory;
+
+  beforeEach(() => {
+    mockHistory = {push: jest.fn()};
+    wrapper = shallow(<App history={mockHistory}/>);
+  });
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+  describe('mapStateToProps', () => {
+    it('should return an object', () => {
+      const mockResult = { members: {} };
+
+      const expected = {};
+
+      const mappedProps = mapStateToProps(mockResult);
+
+      expect(mappedProps).toEqual(expected);
+
+    });
+  });
+});
+
+
+

@@ -1,16 +1,16 @@
-import { searchReducer } from './search-reducer.js';
+import { messageReducer } from './message-reducer.js';
 import * as actions from '../actions';
 
-describe('searchReducer', () => {
+describe('messageReducer', () => {
   it('should return initial state by default', () => {
     const expected = [];
-    const result = searchReducer(undefined, []);
+    const result = messageReducer(undefined, {});
     expect(result).toEqual(expected);
   });
-  it('should return an object with search results', () => {
+  it('should return an object with memberdat', () => {
     const mockResult = [];
     const expected = mockResult;
-    const result = searchReducer([], actions.setSearch(mockResult));
+    const result = messageReducer([], actions.setMessage(mockResult));
     expect(result).toEqual(expected);
   });
 });

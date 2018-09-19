@@ -24,12 +24,13 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./src/**/**/*.js"
   },
   "devDependencies": {
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
-    "eslint": "^5.5.0"
+    "eslint": "^5.6.0"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -38,7 +39,10 @@
       "!src/reducers/index.js",
       "!src/setupTests.js",
       "!src/registerServiceWorker.js",
-      "!src/actions/index.js"
+      "!src/actions/index.js",
+      "!src/containers/Search/Search.js",
+      "!src/containers/ContactPdf/ContactPdf.js{MyDocument, styles}",
+      "!src/containers/Card/Card.js{handlSubmit}"
     ]
   }
 }

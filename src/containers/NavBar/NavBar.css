@@ -30,3 +30,6 @@ h1 {
   text-decoration: underline;
 }
 
+.navLink {
+  text-decoration: none;
+}

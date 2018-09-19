@@ -1,5 +1,6 @@
 .App {
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -7,3 +8,7 @@
   height: 2.3em;
 }
 
+.contact-section {
+  display: flex;
+  justify-content: center;
+}

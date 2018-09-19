@@ -1,16 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { MemberContainer, mapStateToProps } from './MemberContainer';
-import { mockMemberData } from '../../utils/mockData/MockMemberData';
+import { ContactPdf, mapStateToProps  } from './ContactPdf';
 
-describe('MemberContainer container', () => {
-  let wrapper; 
+describe('ContactPdf', () => {
+  let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow( 
-      <MemberContainer 
-        members={mockMemberData}
-      />
+    wrapper = shallow(
+      <ContactPdf />
     );
   });
   it('should match the snapshot', () => {
@@ -28,6 +25,4 @@ describe('MemberContainer container', () => {
 
     });
   });
-  
-
 });

@@ -1,57 +1,91 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter, NavLink } from 'react-router-dom';
-import { membersFetch, membersMoreInfo } from '../../utils/fetchCalls.js';
-import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
-
-
-const styles = StyleSheet.create({
-  page: {
-    flexDirection: 'row',
-    backgroundColor: '#E4E4E4'
-  },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1
-  }
-});
-
-// Create Document Component
-const MyDocument = () => (
-  <Document>
-    <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text></Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
-      </View>
-    </Page>
-  </Document>
-);
+import PropTypes from 'prop-types';
+import { setMessage } from '../../actions';
+import './ContactForm.css';
 
 export class ContactForm extends Component {
   constructor() {
-    super()
-    this.state=({
-      title: ''
-    })
+    super();
+    this.state={
+      name: '',
+      body: '',
+      signature: '',
+      error: false
+    };
+  }
+
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]:value
+    });
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    const { history } = this.props;
+    this.props.setMessage(this.state);
+    this.setState({
+      name: '',
+      body: '',
+      signature: ''
+    });
+    if (this.state.body.length) {
+      history.push('/ContactPdf');
+    } else {
+      alert('Please enter a message');
+      this.setState({
+        error: true
+      });
+    }
   }
 
   render () {
-    const { members } = this.props
-    debugger;
-    return(
-        <div>
-          <MyDocument members={members}/>
-        </div>
-    )
+    return (
+      <form className="ContactForm" onSubmit={this.handleSubmit}>
+        <input  
+          name='name'
+          value={this.state.name}
+          onChange={this.handleChange}
+          placeholder='Enter your Name'
+          type='text'
+        />              
+        <textarea 
+          rows="4"
+          cols="50" 
+          name='body'
+          value={this.state.body}
+          onChange={this.handleChange}
+          placeholder='Enter your Message'
+          className='inputBody'
+        />          
+        <input 
+          name='signature'
+          value={this.state.signature}
+          onChange={this.handleChange}
+          placeholder='Enter your Signature'
+          type='text'
+        /> 
+        <button>Submit your Message</button>    
+      </form>
+    );
   }
 }
 
 export const mapStateToProps = state => ({
-  members: state.searchResults
-})
+  member: state.searchResults
+});
 
-export default connect(mapStateToProps)(ContactForm);
+export const mapDispatchToProps = dispatch => ({
+  setMessage: createMessage => dispatch(setMessage(createMessage))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);
+
+ContactForm.propTypes = {
+  setMessage: PropTypes.func,
+  history: PropTypes.object,
+  member: PropTypes.object
+};
+

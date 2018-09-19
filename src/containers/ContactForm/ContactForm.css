@@ -1,0 +1,38 @@
+.pdf {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  margin-top: 30px;
+  height: 600px;
+  width: 600px;
+}
+
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+  padding: 1em 1em 1em 1em;
+  margin: 4em 0 0 0;
+  border-radius: 8px;
+  background-color: rgba(255,255,255);
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(68,68,68);
+}
+
+input {
+  text-align: center;
+}
+
+.inputBody {
+  margin-top: 10px;
+  height: 300px;
+  background-color: rgba(255,255,255);
+  font-family: 'Open Sans', sans-serif;
+  filter: brightness(95%);
+  border-radius: 8px;
+  border: none;
+}
+
