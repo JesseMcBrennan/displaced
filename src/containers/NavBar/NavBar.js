@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { withRouter, NavLink, Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 export const NavBar = () => {

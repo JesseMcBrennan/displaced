@@ -1,33 +1,26 @@
-import { Card, mapStateToProps, mapDispatchToProps } from './Card';
+import { Card } from './Card';
 import React from 'react';
 import { shallow } from 'enzyme';
-import { setSearch } from '../../actions';
-import { mockMemberData } from '../../utils/mockData/mockMemberData';
+
 
 describe('Card', () => {
   let wrapper;
-  let mockTitle = {title: 'Senator, 2nd Class'};
-  let mockHistory = { push: jest.fn()};
+  let member = {member:'steve'};
+  let event;
 
   beforeEach(() => {
+    event = event = {
+      preventDefault: jest.fn(),
+      target: {
+        value: 'hello',
+        name: 'name'
+      }
+    };
     wrapper = shallow(
-      <Card member={mockTitle}/>);
+      <Card member={member} />);
   });
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
-
-// describe('mapStateToProps', () => {
-//   it('should return an object with ')
-//   //Setup
-//   const mockState = {
-//     members:{}
-//   }
-//   const expected = {}
-
-//   const mappedProps = mapStateToProps(mockState)
-
-//   expect(mappedProps).toEqual(expected)
-// })

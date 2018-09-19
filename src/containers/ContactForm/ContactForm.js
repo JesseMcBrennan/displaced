@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { NavBar } from '../NavBar/NavBar.js';
 import { setMessage } from '../../actions';
 import './ContactForm.css';
 
@@ -17,24 +15,23 @@ export class ContactForm extends Component {
     };
   }
 
-  handleChange = (e) => {
-    const { name, value } = e.target;
+  handleChange = (event) => {
+    const { name, value } = event.target;
     this.setState({
       [name]:value
     });
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    const { history, member } = this.props;
+  handleSubmit = (event) => {
+    event.preventDefault();
+    const { history } = this.props;
     this.props.setMessage(this.state);
     this.setState({
       name: '',
       body: '',
       signature: ''
     });
-    if (this.state.body.length && member) {
-
+    if (this.state.body.length) {
       history.push('/ContactPdf');
     } else {
       alert('Please enter a message');
@@ -87,7 +84,8 @@ export const mapDispatchToProps = dispatch => ({
 export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);
 
 ContactForm.propTypes = {
-  getMovies: PropTypes.array,
-  setMessage: PropTypes.func
+  setMessage: PropTypes.func,
+  history: PropTypes.object,
+  member: PropTypes.object
 };
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { NavBar } from './NavBar';
 
 describe('NavBar container', () => {

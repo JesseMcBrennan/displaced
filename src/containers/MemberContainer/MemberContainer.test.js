@@ -1,9 +1,7 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { MemberContainer, mapStateToProps } from './MemberContainer';
 import { mockMemberData } from '../../utils/mockData/MockMemberData';
-import { setSearch } from '../../actions';
 
 describe('MemberContainer container', () => {
   let wrapper; 

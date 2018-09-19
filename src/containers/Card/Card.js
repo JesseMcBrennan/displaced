@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { withRouter, NavLink } from 'react-router-dom';
-import { membersFetch, membersMoreInfo } from '../../utils/fetchCalls.js';
 import './Card.css';
 import PropTypes from 'prop-types';
 
@@ -13,9 +10,8 @@ export class Card extends Component {
     });
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = () => {
     const { history } = this.props;
-    const url = this.props.member.member_url;
     history.push('/ContactForm');
   }
 
@@ -26,6 +22,7 @@ export class Card extends Component {
         <div className='text-container'>
           <h2>{member.title} {member.firstName} {member.lastName}</h2>
           <h2>Party: {member.party}</h2>
+          <h2>Voting Percentage: {member.voting_percentage}%</h2>
           <h2>Office: {member.office} </h2>
           <h2>Phone Number: {member.phone} </h2>
           <a href={member.memberUrl}>{member.memberUrl}</a>
@@ -35,7 +32,12 @@ export class Card extends Component {
             title="Inline Frame Example"
             src={member.nyt}>
           </iframe>
-          <button className="submit-message" onClick={this.handleSubmit}>Write your Representative</button>
+          <button 
+            className="submit-message" 
+            onClick={this.handleSubmit}
+          >
+            Write your Representative
+          </button>
         </div>
       </div>
     );

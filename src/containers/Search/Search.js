@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link, withRouter, NavLink } from 'react-router-dom';
-import { membersFetch, nonProfitFetch } from '../../utils/fetchCalls.js';
 import { membersCleaner } from '../../utils/dataCleaner.js';
 import { setSearch } from '../../actions';
 import PropTypes from 'prop-types';
@@ -18,15 +16,15 @@ export class Search extends Component {
     };
   }
 
-  handleChange = e => {
-    const { name, value } = e.target;
+  handleChange = event => {
+    const { name, value } = event.target;
     this.setState({
       [name]: value
     });
   }
 
-  handleSubmit = async (e) => {
-    e.preventDefault();
+  handleSubmit = async (event) => {
+    event.preventDefault();
     const zipcode = this.state.zipcode;
     const district = getDistricts(zipcode);
     const validate = confirm(zipcode, district);
@@ -147,5 +145,6 @@ export const mapDispatchToProps = dispatch => ({
 export default connect(null, mapDispatchToProps)(Search);
 
 Search.propTypes = {
-  setSearch: PropTypes.func
+  setSearch: PropTypes.func,
+  history: PropTypes.object
 };

@@ -39,7 +39,10 @@
       "!src/reducers/index.js",
       "!src/setupTests.js",
       "!src/registerServiceWorker.js",
-      "!src/actions/index.js"
+      "!src/actions/index.js",
+      "!src/containers/Search/Search.js",
+      "!src/containers/ContactPdf/ContactPdf.js{MyDocument, styles}",
+      "!src/containers/Card/Card.js{handlSubmit}"
     ]
   }
 }

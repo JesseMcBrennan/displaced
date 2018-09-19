@@ -1,9 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import { shallow } from 'enzyme';
-
-import { mockMemberData } from '../../utils/mockData/MockMemberData';
-import { setSearch } from '../../actions';
 import { ContactPdf, mapStateToProps  } from './ContactPdf';
 
 describe('ContactPdf', () => {
