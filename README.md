@@ -20,4 +20,4 @@ The following page contains basic information about the representative such as t
 
 ### Up-and-running
 
-Add information on how to get it up and running.
+In order to get this application you must npm install and npm run. 
